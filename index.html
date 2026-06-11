@@ -199,13 +199,26 @@ function CheckTab({ machine }) {
             <div className="result-box" style={{marginBottom:14}}>
               <div className="result-label">{gNum}G〜天井の期待値（5.6枚交換）</div>
               <div className={`result-value ${evClass}`}>{formatEv(ev)}</div>
-              {hourlyFmt && (
-                <div className="hourly-row" style={{marginTop:10}}>
-                  <span style={{color:'#888',fontSize:'0.82rem'}}>時給換算（残り{remainG}G・700G/h）　</span>
-                  <span className={`hourly-value ${hourlyClass}`}>約{Math.abs(hourly).toLocaleString('ja-JP')}{hourly < 0 ? '円/時 損' : '円/時'}</span>
-                  {hourly >= 1500 && <span className="hourly-badge">★ 時給1500円超え</span>}
-                </div>
-              )}
+              {remainG > 0 && (() => {
+                const totalMin = Math.round(remainG / 700 * 60);
+                const timeStr = totalMin >= 60
+                  ? `約${Math.floor(totalMin / 60)}時間${totalMin % 60 > 0 ? (totalMin % 60) + '分' : ''}`
+                  : `約${totalMin}分`;
+                return (
+                  <div style={{marginTop:10}}>
+                    <div className="hourly-row" style={{display:'flex',alignItems:'center',flexWrap:'wrap',gap:'6px'}}>
+                      <span style={{color:'#888',fontSize:'0.82rem'}}>時給換算（700G/h）　</span>
+                      {hourlyFmt && <>
+                        <span className={`hourly-value ${hourlyClass}`}>約{Math.abs(hourly).toLocaleString('ja-JP')}{hourly < 0 ? '円/時 損' : '円/時'}</span>
+                        {hourly >= 1500 && <span className="hourly-badge">★ 時給1500円超え</span>}
+                      </>}
+                    </div>
+                    <div style={{marginTop:4,fontSize:'0.80rem',color:'#666'}}>
+                      残り {remainG}G・{timeStr}
+                    </div>
+                  </div>
+                );
+              })()}
               {!isExact && <div className="interp-note" style={{marginTop:6}}>※ テーブル値から線形補間</div>}
             </div>
           )}
