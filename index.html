@@ -155,9 +155,9 @@ function CheckTab({ machine }) {
   const isExact = hasData && machine.evTable.some(r => r.g === gNum);
   const evClass = ev === null ? '' : ev > 0 ? 'ev-pos' : ev < 0 ? 'ev-neg' : 'ev-zero';
 
-  // 時給換算: 期待値 ÷ 残りG数 × 700G/h
+  // 時給換算: 期待値 ÷ 残りG数 × 800G/h
   const remainG = hasData ? maxG - gNum : 0;
-  const hourly = (ev !== null && remainG > 0) ? Math.round(ev / remainG * 700) : null;
+  const hourly = (ev !== null && remainG > 0) ? Math.round(ev / remainG * 800) : null;
   const hourlyClass = hourly === null ? '' : hourly >= 1500 ? 'hourly-gold' : hourly < 0 ? 'hourly-red' : '';
   const hourlyFmt = hourly === null ? null
     : (hourly >= 0 ? '+' : '') + hourly.toLocaleString('ja-JP') + '円/時';
@@ -200,14 +200,14 @@ function CheckTab({ machine }) {
               <div className="result-label">{gNum}G〜天井の期待値（5.6枚交換）</div>
               <div className={`result-value ${evClass}`}>{formatEv(ev)}</div>
               {remainG > 0 && (() => {
-                const totalMin = Math.round(remainG / 700 * 60);
+                const totalMin = Math.round(remainG / 800 * 60);
                 const timeStr = totalMin >= 60
                   ? `約${Math.floor(totalMin / 60)}時間${totalMin % 60 > 0 ? (totalMin % 60) + '分' : ''}`
                   : `約${totalMin}分`;
                 return (
                   <div style={{marginTop:10}}>
                     <div className="hourly-row" style={{display:'flex',alignItems:'center',flexWrap:'wrap',gap:'6px'}}>
-                      <span style={{color:'#888',fontSize:'0.82rem'}}>時給換算（700G/h）　</span>
+                      <span style={{color:'#888',fontSize:'0.82rem'}}>時給換算（800G/h）　</span>
                       {hourlyFmt && <>
                         <span className={`hourly-value ${hourlyClass}`}>約{Math.abs(hourly).toLocaleString('ja-JP')}{hourly < 0 ? '円/時 損' : '円/時'}</span>
                         {hourly >= 1500 && <span className="hourly-badge">★ 時給1500円超え</span>}
