@@ -61,9 +61,15 @@
   .toggle-switch input:checked + .toggle-slider { background: rgba(100,160,240,0.4); }
   .toggle-switch input:checked + .toggle-slider:before { transform: translateX(20px); background: #80b0e0; }
   .toggle-disabled .toggle-slider { opacity: 0.35; cursor: not-allowed; }
-  .target-section { margin-top: 14px; display: flex; flex-direction: column; gap: 7px; }
-  .target-hit { background: rgba(240,192,96,0.13); border-left: 3px solid #f0c060; border-radius: 0 6px 6px 0; padding: 8px 14px; color: #f0c060; font-weight: 600; font-size: 0.92rem; }
-  .target-next { color: #888; font-size: 0.87rem; padding: 6px 2px; }
+  .target-list { margin-top: 16px; }
+  .target-row { display: flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 6px; margin-bottom: 5px; background: #1e1e28; border: 1px solid #2a2a38; }
+  .target-row.tr-active { background: rgba(240,192,96,0.11); border-color: rgba(240,192,96,0.4); }
+  .target-row.tr-passed { opacity: 0.35; }
+  .target-row-label { flex: 1; font-size: 0.88rem; color: #bbb; min-width: 0; }
+  .target-row.tr-active .target-row-label { color: #f0d070; font-weight: 600; }
+  .target-row-range { font-size: 0.79rem; color: #555; white-space: nowrap; }
+  .target-row-status { font-size: 0.82rem; font-weight: 600; white-space: nowrap; color: #f0c060; min-width: 88px; text-align: right; }
+  .target-row-status.ts-gray { color: #555; font-weight: 400; }
   .target-tag { font-size: 0.72rem; color: #7ab87a; margin-top: 3px; line-height: 1.5; }
 </style>
 </head>
@@ -88,6 +94,25 @@ function interpolate(evTable, g) {
   if (lo.g === hi.g) return lo.ev56;
   const t = (g - lo.g) / (hi.g - lo.g);
   return Math.round(lo.ev56 + t * (hi.ev56 - lo.ev56));
+}
+
+// 狙い目の終端G数を計算
+// ゾーン系はゾーン番号+35G、天井系はceilingを使用
+function computeTargetTo(target, machine) {
+  const label = target.label || '';
+  // "XXXGゾーン狙い" → ゾーン番号+35
+  const zoneG = label.match(/(\d+)Gゾーン/);
+  if (zoneG) return parseInt(zoneG[1]) + 35;
+  // "朝一88G狙い" / "150G狙い" / "350G狙い" など → 番号+35
+  const gNum = label.match(/(\d+)G狙い/);
+  if (gNum) return parseInt(gNum[1]) + 35;
+  // 番号なし "ゾーン狙い" → from+35
+  if (label.includes('ゾーン')) return target.from + 35;
+  // CZ天井系
+  if ((label.includes('CZ') || label.includes('スルー')) && machine.cz_ceiling)
+    return machine.cz_ceiling;
+  // 天井・AT後・設定変更後・ST後・朝一 etc → AT天井
+  return machine.ceiling || 9999;
 }
 
 // CZ専用テーブルがない機種向けの独自計算
@@ -115,12 +140,14 @@ function StatusPill({ status }) {
 function CheckTab({ machine }) {
   const [g, setG] = React.useState('');
   const hasData = machine.status === 'ok' && machine.evTable.length > 0;
+  const hasTargets = !!(machine.targets && machine.targets.length > 0);
+  const showInput = hasData || hasTargets;
   const maxG = hasData ? machine.evTable[machine.evTable.length - 1].g : 0;
 
   const gNum = parseInt(g, 10);
-  const ev = (hasData && !isNaN(gNum) && gNum >= 0) ? interpolate(machine.evTable, gNum) : null;
+  const gEntered = g !== '' && !isNaN(gNum) && gNum >= 0;
+  const ev = (hasData && gEntered) ? interpolate(machine.evTable, gNum) : null;
   const isExact = hasData && machine.evTable.some(r => r.g === gNum);
-
   const evClass = ev === null ? '' : ev > 0 ? 'ev-pos' : ev < 0 ? 'ev-neg' : 'ev-zero';
 
   return (
@@ -135,7 +162,7 @@ function CheckTab({ machine }) {
         {machine.ceiling_note && <div className="ceiling-note">⚠ {machine.ceiling_note}</div>}
       </div>
 
-      {!hasData ? (
+      {!showInput ? (
         <p className="no-data">
           {machine.status === 'no_ceiling' ? 'この機種は天井なし（ジャグラー系等）のため期待値データはありません。' :
            machine.status === 'not_found' ? 'なな徹にデータが見つかりませんでした。' :
@@ -148,47 +175,56 @@ function CheckTab({ machine }) {
             <input
               type="number"
               min="0"
-              max={maxG}
+              max={maxG || undefined}
               value={g}
               onChange={e => setG(e.target.value)}
               placeholder="例: 700"
             />
-            <span style={{fontSize:'0.82rem',color:'#666'}}>（0 〜 {maxG}G）</span>
+            {hasData && <span style={{fontSize:'0.82rem',color:'#666'}}>（0 〜 {maxG}G）</span>}
           </div>
 
-          {!isNaN(gNum) && gNum >= 0 && g !== '' && (
-            <div className="result-box">
+          {hasData && gEntered && (
+            <div className="result-box" style={{marginBottom:14}}>
               <div className="result-label">{gNum}G〜天井の期待値（5.6枚交換）</div>
               <div className={`result-value ${evClass}`}>{formatEv(ev)}</div>
               {!isExact && <div className="interp-note">※ テーブル値から線形補間</div>}
             </div>
           )}
-          {machine.targets && machine.targets.length > 0 && !isNaN(gNum) && gNum >= 0 && g !== '' && (() => {
-            const hits = machine.targets.filter(t => gNum >= t.from);
-            const misses = machine.targets.filter(t => gNum < t.from).sort((a, b) => a.from - b.from);
-            if (hits.length > 0) {
-              return (
-                <div className="target-section">
-                  {hits.map((t, i) => (
-                    <div key={i} className="target-hit">
-                      ★ 狙い目{t.label ? `（${t.label}）` : ''}
-                    </div>
-                  ))}
-                </div>
-              );
-            } else if (misses.length > 0) {
-              const next = misses[0];
-              return (
-                <div className="target-section">
-                  <div className="target-next">
-                    次の狙い目: {next.from}G{next.label ? `（${next.label}）` : ''}（あと {next.from - gNum}G）
-                  </div>
-                </div>
-              );
-            }
-            return null;
-          })()}
         </>
+      )}
+
+      {hasTargets && (
+        <div className="target-list">
+          <div className="section-title" style={{marginBottom:8}}>
+            狙い目（たられば）
+            {machine.noteUrl && (
+              <a href={machine.noteUrl} target="_blank" rel="noopener noreferrer"
+                 style={{marginLeft:10,fontSize:'0.78rem',color:'#80b0e0',textDecoration:'none'}}>
+                ▶ 記事を開く
+              </a>
+            )}
+          </div>
+          {machine.targets.map((t, i) => {
+            const to = computeTargetTo(t, machine);
+            let trClass = '';
+            let statusText = null;
+            let statusGray = false;
+            if (gEntered) {
+              if (gNum > to)          { trClass = 'tr-passed'; statusText = '通過済み'; statusGray = true; }
+              else if (gNum >= t.from){ trClass = 'tr-active';  statusText = '★ 狙い目中'; }
+              else                    { statusText = `あと ${t.from - gNum}G`; statusGray = true; }
+            }
+            return (
+              <div key={i} className={`target-row ${trClass}`}>
+                <div className="target-row-label">{t.label || '天井狙い'}</div>
+                <div className="target-row-range">{t.from}G〜{to < 9999 ? to + 'G' : ''}</div>
+                {statusText && (
+                  <div className={`target-row-status${statusGray ? ' ts-gray' : ''}`}>{statusText}</div>
+                )}
+              </div>
+            );
+          })}
+        </div>
       )}
     </div>
   );
