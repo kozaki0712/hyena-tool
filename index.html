@@ -12,8 +12,8 @@
   body { font-family: 'Hiragino Sans', 'Yu Gothic', sans-serif; background: #0f0f13; color: #e0e0e0; min-height: 100vh; }
   #root { max-width: 960px; margin: 0 auto; padding: 20px; }
   h1 { font-size: 1.5rem; color: #f0c060; margin-bottom: 20px; letter-spacing: 0.05em; }
-  .tab-bar { display: flex; border-bottom: 2px solid #333; margin-bottom: 20px; }
-  .tab { padding: 10px 24px; cursor: pointer; border-bottom: 3px solid transparent; margin-bottom: -2px; font-size: 0.95rem; color: #888; transition: color 0.2s; }
+  .tab-bar { display: flex; border-bottom: 2px solid #333; margin-bottom: 20px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .tab { padding: 10px 16px; cursor: pointer; border-bottom: 3px solid transparent; margin-bottom: -2px; font-size: 0.92rem; color: #888; transition: color 0.2s; white-space: nowrap; }
   .tab.active { color: #f0c060; border-bottom-color: #f0c060; }
   .tab:hover:not(.active) { color: #ccc; }
   .card { background: #1a1a22; border-radius: 10px; padding: 20px; }
@@ -76,6 +76,17 @@
   .hourly-gold { color: #f0c060; }
   .hourly-red  { color: #ef5350; }
   .hourly-badge { display: inline-block; background: rgba(240,192,96,0.18); border: 1px solid rgba(240,192,96,0.5); border-radius: 12px; padding: 2px 10px; font-size: 0.78rem; font-weight: 600; color: #f0c060; margin-left: 10px; vertical-align: middle; }
+  .machine-search-wrap { position: relative; margin-bottom: 4px; }
+  .machine-search-input { width: 100%; padding: 10px 36px 10px 12px; background: #252530; color: #e0e0e0; border: 1px solid #444; border-radius: 6px; font-size: 0.95rem; box-sizing: border-box; }
+  .machine-search-input:focus { outline: none; border-color: #f0c060; }
+  .machine-search-arrow { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); color: #666; font-size: 0.85rem; pointer-events: none; }
+  .machine-dropdown { position: absolute; top: 100%; left: 0; right: 0; background: #1e1e28; border: 1px solid #555; border-radius: 0 0 8px 8px; max-height: 300px; overflow-y: auto; z-index: 200; box-shadow: 0 8px 24px rgba(0,0,0,0.7); margin-top: 1px; }
+  .machine-dropdown-item { padding: 9px 14px; cursor: pointer; border-bottom: 1px solid #2a2a38; }
+  .machine-dropdown-item:last-child { border-bottom: none; }
+  .machine-dropdown-item:hover, .machine-dropdown-item.is-focused { background: rgba(240,192,96,0.1); }
+  .machine-dropdown-name { font-size: 0.9rem; color: #e0e0e0; }
+  .machine-dropdown-item.is-focused .machine-dropdown-name { color: #f0d070; }
+  .machine-dropdown-sub { font-size: 0.73rem; color: #666; margin-top: 2px; }
 </style>
 </head>
 <body>
@@ -142,11 +153,86 @@ function StatusPill({ status }) {
   return <span className="status-pill pill-na">データなし</span>;
 }
 
+function MachineSearch({ value, onChange }) {
+  const [query, setQuery] = React.useState('');
+  const [open, setOpen] = React.useState(false);
+  const [focusedIdx, setFocusedIdx] = React.useState(-1);
+  const blurTimer = React.useRef(null);
+  const selected = DEFAULT_MACHINES.find(m => m.id === value);
+  const filtered = React.useMemo(() => {
+    const q = query.trim();
+    return q ? DEFAULT_MACHINES.filter(m => m.name.includes(q)) : DEFAULT_MACHINES;
+  }, [query]);
+  const handleFocus = () => {
+    clearTimeout(blurTimer.current);
+    setQuery('');
+    setOpen(true);
+    setFocusedIdx(-1);
+  };
+  const handleBlur = () => {
+    blurTimer.current = setTimeout(() => { setOpen(false); setQuery(''); }, 200);
+  };
+  const handleChange = e => { setQuery(e.target.value); setOpen(true); setFocusedIdx(-1); };
+  const handleSelect = m => {
+    clearTimeout(blurTimer.current);
+    onChange(m.id);
+    setOpen(false);
+    setQuery('');
+    setFocusedIdx(-1);
+  };
+  const handleKeyDown = e => {
+    if (!open) { if (e.key === 'Enter' || e.key === 'ArrowDown') setOpen(true); return; }
+    if (e.key === 'ArrowDown') { e.preventDefault(); setFocusedIdx(i => Math.min(i + 1, filtered.length - 1)); }
+    else if (e.key === 'ArrowUp') { e.preventDefault(); setFocusedIdx(i => Math.max(i - 1, 0)); }
+    else if (e.key === 'Enter') { e.preventDefault(); if (focusedIdx >= 0 && filtered[focusedIdx]) handleSelect(filtered[focusedIdx]); }
+    else if (e.key === 'Escape') { setOpen(false); setQuery(''); }
+  };
+  return (
+    <div className="machine-search-wrap">
+      <input
+        type="text"
+        className="machine-search-input"
+        placeholder="機種名で検索..."
+        value={open ? query : (selected ? selected.name : '')}
+        onChange={handleChange}
+        onFocus={handleFocus}
+        onBlur={handleBlur}
+        onKeyDown={handleKeyDown}
+        autoComplete="off"
+        spellCheck="false"
+      />
+      <span className="machine-search-arrow">▾</span>
+      {open && (
+        <div className="machine-dropdown">
+          {filtered.length === 0 ? (
+            <div className="machine-dropdown-item" style={{cursor:'default'}}>
+              <div className="machine-dropdown-name" style={{color:'#666'}}>該当機種なし</div>
+            </div>
+          ) : filtered.map((m, i) => (
+            <div
+              key={m.id}
+              className={`machine-dropdown-item${i === focusedIdx ? ' is-focused' : ''}`}
+              onClick={() => handleSelect(m)}
+              onMouseEnter={() => setFocusedIdx(i)}
+            >
+              <div className="machine-dropdown-name">{m.name}</div>
+              <div className="machine-dropdown-sub">
+                {m.ceiling ? `天井 ${m.ceiling}G` : m.status === 'no_ceiling' ? '天井なし' : 'データなし'}
+                {m.cz_ceiling ? ` / CZ ${m.cz_ceiling}G` : ''}
+                {m.targets && m.targets.length > 0 ? ' / 狙い目あり' : ''}
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
 function CheckTab({ machine }) {
   const [g, setG] = React.useState('');
   const hasData = machine.status === 'ok' && machine.evTable.length > 0;
-  const hasTargets = !!(machine.targets && machine.targets.length > 0);
-  const showInput = hasData || hasTargets;
+  const showInput = hasData;
   const maxG = hasData ? machine.evTable[machine.evTable.length - 1].g : 0;
 
   const gNum = parseInt(g, 10);
@@ -224,40 +310,6 @@ function CheckTab({ machine }) {
           )}
         </>
       )}
-
-      {hasTargets && (
-        <div className="target-list">
-          <div className="section-title" style={{marginBottom:8}}>
-            狙い目（たられば）
-            {machine.noteUrl && (
-              <a href={machine.noteUrl} target="_blank" rel="noopener noreferrer"
-                 style={{marginLeft:10,fontSize:'0.78rem',color:'#80b0e0',textDecoration:'none'}}>
-                ▶ 記事を開く
-              </a>
-            )}
-          </div>
-          {machine.targets.map((t, i) => {
-            const to = computeTargetTo(t, machine);
-            let trClass = '';
-            let statusText = null;
-            let statusGray = false;
-            if (gEntered) {
-              if (gNum > to)          { trClass = 'tr-passed'; statusText = '通過済み'; statusGray = true; }
-              else if (gNum >= t.from){ trClass = 'tr-active';  statusText = '★ 狙い目中'; }
-              else                    { statusText = `あと ${t.from - gNum}G`; statusGray = true; }
-            }
-            return (
-              <div key={i} className={`target-row ${trClass}`}>
-                <div className="target-row-label">{t.label || '天井狙い'}</div>
-                <div className="target-row-range">{t.from}G〜{to < 9999 ? to + 'G' : ''}</div>
-                {statusText && (
-                  <div className={`target-row-status${statusGray ? ' ts-gray' : ''}`}>{statusText}</div>
-                )}
-              </div>
-            );
-          })}
-        </div>
-      )}
     </div>
   );
 }
@@ -328,142 +380,205 @@ function TableTab({ machine }) {
   );
 }
 
-function CzTab() {
-  const czMachines = DEFAULT_MACHINES.filter(m => m.cz_ceiling != null);
-  const [machineId, setMachineId] = React.useState(czMachines[0].id);
+function CzZoneTab({ machine }) {
   const [czG, setCzG] = React.useState('');
   const [isReset, setIsReset] = React.useState(false);
+  const [g, setG] = React.useState('');
 
-  const machine = czMachines.find(m => m.id === machineId) || czMachines[0];
+  const hasCz = !!(machine.cz_ceiling);
+  const hasTargets = !!(machine.targets && machine.targets.length > 0);
   const hasResetTable = !!(machine.czEvTableReset);
   const activeReset = isReset && hasResetTable;
   const activeTable = activeReset ? machine.czEvTableReset : (machine.czEvTable || null);
-  const isCustom = !activeTable;
+  const isCustom = hasCz && !activeTable;
   const maxCzG = machine.cz_ceiling;
   const czGNum = parseInt(czG, 10);
 
-  let ev = null;
-  if (czG !== '' && !isNaN(czGNum) && czGNum >= 0) {
-    ev = activeTable ? interpolate(activeTable, czGNum) : czEvCustom(machine, czGNum);
+  let czEv = null;
+  if (hasCz && czG !== '' && !isNaN(czGNum) && czGNum >= 0) {
+    czEv = activeTable ? interpolate(activeTable, czGNum) : czEvCustom(machine, czGNum);
   }
-
-  const evClass = ev === null ? '' : ev > 0 ? 'ev-pos' : ev < 0 ? 'ev-neg' : 'ev-zero';
+  const czEvClass = czEv === null ? '' : czEv > 0 ? 'ev-pos' : czEv < 0 ? 'ev-neg' : 'ev-zero';
   const evRowClass = v => v > 0 ? 'ev-pos' : v < 0 ? 'ev-neg' : 'ev-zero';
 
-  // 表示用テーブルを生成
-  let displayRows = null;
-  if (activeTable) {
-    let prevAbove = false;
-    displayRows = activeTable.map((row, i) => {
-      const above = row.ev56 >= 1500;
-      const boundary = above && !prevAbove && i > 0;
-      prevAbove = above;
-      return { ...row, above, boundary };
-    });
-  } else if (machine.evTable && machine.evTable.length && machine.cz_ceiling) {
-    const maxAtG = machine.evTable[machine.evTable.length - 1].g;
-    const raw = [];
-    for (let g = 0; g <= machine.cz_ceiling; g += 50) {
-      const ev56 = interpolate(machine.evTable, maxAtG - machine.cz_ceiling + g);
-      if (ev56 !== null) raw.push({ g, ev56 });
+  let czDisplayRows = null;
+  if (hasCz) {
+    if (activeTable) {
+      let prevAbove = false;
+      czDisplayRows = activeTable.map((row, i) => {
+        const above = row.ev56 >= 1500;
+        const boundary = above && !prevAbove && i > 0;
+        prevAbove = above;
+        return { ...row, above, boundary };
+      });
+    } else if (machine.evTable && machine.evTable.length && machine.cz_ceiling) {
+      const maxAtG = machine.evTable[machine.evTable.length - 1].g;
+      const raw = [];
+      for (let cg = 0; cg <= machine.cz_ceiling; cg += 50) {
+        const ev56 = interpolate(machine.evTable, maxAtG - machine.cz_ceiling + cg);
+        if (ev56 !== null) raw.push({ g: cg, ev56 });
+      }
+      if (machine.cz_ceiling % 50 !== 0) {
+        const ev56 = interpolate(machine.evTable, maxAtG);
+        if (ev56 !== null) raw.push({ g: machine.cz_ceiling, ev56 });
+      }
+      let prevAbove = false;
+      czDisplayRows = raw.map((row, i) => {
+        const above = row.ev56 >= 1500;
+        const boundary = above && !prevAbove && i > 0;
+        prevAbove = above;
+        return { ...row, above, boundary };
+      });
     }
-    if (machine.cz_ceiling % 50 !== 0) {
-      const ev56 = interpolate(machine.evTable, maxAtG);
-      if (ev56 !== null) raw.push({ g: machine.cz_ceiling, ev56 });
-    }
-    let prevAbove = false;
-    displayRows = raw.map((row, i) => {
-      const above = row.ev56 >= 1500;
-      const boundary = above && !prevAbove && i > 0;
-      prevAbove = above;
-      return { ...row, above, boundary };
-    });
+  }
+
+  const gNum = parseInt(g, 10);
+  const gEntered = g !== '' && !isNaN(gNum) && gNum >= 0;
+
+  if (!hasCz && !hasTargets) {
+    return (
+      <div>
+        <div className="machine-info">
+          <div className="machine-name">
+            {machine.name}
+            <StatusPill status={machine.status} />
+          </div>
+        </div>
+        <p className="no-data">この機種はCZデータ・狙い目情報がありません。</p>
+      </div>
+    );
   }
 
   return (
     <div>
-      <div className="section-title" style={{marginBottom:8}}>CZ機種を選択</div>
-      <select value={machineId} onChange={e => { setMachineId(Number(e.target.value)); setCzG(''); setIsReset(false); }}>
-        {czMachines.map(m => (
-          <option key={m.id} value={m.id}>{m.name}（CZ {m.cz_ceiling}G）</option>
-        ))}
-      </select>
-
       <div className="machine-info">
         <div className="machine-name">
           {machine.name}
-          <span className="ceiling-badge">天井 {machine.ceiling}G</span>
-          <span className="cz-badge">CZ {machine.cz_ceiling}G</span>
+          <StatusPill status={machine.status} />
+          {machine.ceiling && <span className="ceiling-badge">天井 {machine.ceiling}G</span>}
+          {hasCz && <span className="cz-badge">CZ {machine.cz_ceiling}G</span>}
         </div>
         {machine.ceiling_note && <div className="ceiling-note">⚠ {machine.ceiling_note}</div>}
-        <div style={{marginTop:6,fontSize:'0.78rem',color: machine.czEvTable ? '#4a8' : '#555'}}>
-          {machine.czEvTable ? '✓ CZ専用テーブルあり' : '⚠ CZ専用テーブルなし（独自計算モード）'}
-        </div>
-      </div>
-
-      <div className="g-row" style={{marginBottom:12}}>
-        <label>朝一（設定変更）</label>
-        <label className={`toggle-switch${!hasResetTable ? ' toggle-disabled' : ''}`}>
-          <input type="checkbox" checked={activeReset} onChange={e => setIsReset(e.target.checked)} disabled={!hasResetTable} />
-          <span className="toggle-slider"></span>
-        </label>
-        <span style={{fontSize:'0.78rem',color: hasResetTable ? (activeReset ? '#80b0e0' : '#aaa') : '#555'}}>
-          {hasResetTable ? (activeReset ? 'リセット後（設定変更）' : '通常条件') : 'リセットデータなし'}
-        </span>
-      </div>
-
-      <div className="g-row">
-        <label>CZ間G数</label>
-        <input
-          type="number"
-          min="0"
-          max={maxCzG}
-          value={czG}
-          onChange={e => setCzG(e.target.value)}
-          placeholder="例: 300"
-        />
-        <span style={{fontSize:'0.82rem',color:'#666'}}>（0 〜 {maxCzG}G）</span>
-      </div>
-
-      {czG !== '' && !isNaN(czGNum) && czGNum >= 0 && (
-        <div className="result-box" style={{marginBottom:20}}>
-          <div className="result-label">
-            CZ {czGNum}G〜天井の期待値（5.6枚交換）
-            <span style={{marginLeft:10,fontSize:'0.85em',color:'#777'}}>残り {Math.max(0, maxCzG - czGNum)}G</span>
+        {hasCz && (
+          <div style={{marginTop:6,fontSize:'0.78rem',color: machine.czEvTable ? '#4a8' : '#555'}}>
+            {machine.czEvTable ? '✓ CZ専用テーブルあり' : '⚠ CZ専用テーブルなし（独自計算モード）'}
           </div>
-          <div className={`result-value ${evClass}`}>{formatEv(ev)}</div>
-          {isCustom && <div className="interp-note">※ 独自計算（目安）— CZ専用テーブルなし、AT期待値テーブルから推算</div>}
-          {!isCustom && activeTable && !activeTable.find(r => r.g === czGNum) && (
-            <div className="interp-note">※ テーブル値から線形補間</div>
+        )}
+      </div>
+
+      {hasCz && (
+        <>
+          <div className="g-row" style={{marginBottom:12}}>
+            <label>朝一（設定変更）</label>
+            <label className={`toggle-switch${!hasResetTable ? ' toggle-disabled' : ''}`}>
+              <input type="checkbox" checked={activeReset} onChange={e => setIsReset(e.target.checked)} disabled={!hasResetTable} />
+              <span className="toggle-slider"></span>
+            </label>
+            <span style={{fontSize:'0.78rem',color: hasResetTable ? (activeReset ? '#80b0e0' : '#aaa') : '#555'}}>
+              {hasResetTable ? (activeReset ? 'リセット後（設定変更）' : '通常条件') : 'リセットデータなし'}
+            </span>
+          </div>
+
+          <div className="g-row">
+            <label>CZ間G数</label>
+            <input
+              type="number"
+              min="0"
+              max={maxCzG}
+              value={czG}
+              onChange={e => setCzG(e.target.value)}
+              placeholder="例: 300"
+            />
+            <span style={{fontSize:'0.82rem',color:'#666'}}>（0 〜 {maxCzG}G）</span>
+          </div>
+
+          {czG !== '' && !isNaN(czGNum) && czGNum >= 0 && (
+            <div className="result-box" style={{marginBottom:20}}>
+              <div className="result-label">
+                CZ {czGNum}G〜天井の期待値（5.6枚交換）
+                <span style={{marginLeft:10,fontSize:'0.85em',color:'#777'}}>残り {Math.max(0, maxCzG - czGNum)}G</span>
+              </div>
+              <div className={`result-value ${czEvClass}`}>{formatEv(czEv)}</div>
+              {isCustom && <div className="interp-note">※ 独自計算（目安）— CZ専用テーブルなし、AT期待値テーブルから推算</div>}
+              {!isCustom && activeTable && !activeTable.find(r => r.g === czGNum) && (
+                <div className="interp-note">※ テーブル値から線形補間</div>
+              )}
+            </div>
           )}
-        </div>
+
+          {czDisplayRows && czDisplayRows.length > 0 && (
+            <>
+              <div className="section-title" style={{marginTop:8,marginBottom:10}}>
+                CZ間天井期待値表{isCustom ? '（独自計算・目安）' : ''}
+              </div>
+              <table>
+                <thead>
+                  <tr>
+                    <th>CZ間G数</th>
+                    <th>期待値（5.6枚交換）</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {czDisplayRows.map(row => (
+                    <tr
+                      key={row.g}
+                      className={[row.above ? 'highlight' : '', row.boundary ? 'hl-boundary' : ''].filter(Boolean).join(' ')}
+                    >
+                      <td>{row.g}G〜</td>
+                      <td className={evRowClass(row.ev56)}>{formatEv(row.ev56)}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </>
+          )}
+        </>
       )}
 
-      {displayRows && displayRows.length > 0 && (
-        <>
-          <div className="section-title" style={{marginTop:8,marginBottom:10}}>
-            CZ間天井期待値表{isCustom ? '（独自計算・目安）' : ''}
+      {hasTargets && (
+        <div className="target-list" style={{marginTop: hasCz ? 8 : 0}}>
+          {hasCz && <div style={{borderTop:'1px solid #2a2a38',marginBottom:16,marginTop:20}}></div>}
+          <div className="section-title" style={{marginBottom:8}}>
+            狙い目（たられば）
+            {machine.noteUrl && (
+              <a href={machine.noteUrl} target="_blank" rel="noopener noreferrer"
+                 style={{marginLeft:10,fontSize:'0.78rem',color:'#80b0e0',textDecoration:'none'}}>
+                ▶ 記事を開く
+              </a>
+            )}
           </div>
-          <table>
-            <thead>
-              <tr>
-                <th>CZ間G数</th>
-                <th>期待値（5.6枚交換）</th>
-              </tr>
-            </thead>
-            <tbody>
-              {displayRows.map(row => (
-                <tr
-                  key={row.g}
-                  className={[row.above ? 'highlight' : '', row.boundary ? 'hl-boundary' : ''].filter(Boolean).join(' ')}
-                >
-                  <td>{row.g}G〜</td>
-                  <td className={evRowClass(row.ev56)}>{formatEv(row.ev56)}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </>
+          <div className="g-row" style={{marginBottom:12}}>
+            <label>現在G数</label>
+            <input
+              type="number"
+              min="0"
+              value={g}
+              onChange={e => setG(e.target.value)}
+              placeholder="例: 500"
+            />
+            <span style={{fontSize:'0.82rem',color:'#666'}}>（入力で狙い目判定）</span>
+          </div>
+          {machine.targets.map((t, i) => {
+            const to = computeTargetTo(t, machine);
+            let trClass = '';
+            let statusText = null;
+            let statusGray = false;
+            if (gEntered) {
+              if (gNum > to)          { trClass = 'tr-passed'; statusText = '通過済み'; statusGray = true; }
+              else if (gNum >= t.from){ trClass = 'tr-active';  statusText = '★ 狙い目中'; }
+              else                    { statusText = `あと ${t.from - gNum}G`; statusGray = true; }
+            }
+            return (
+              <div key={i} className={`target-row ${trClass}`}>
+                <div className="target-row-label">{t.label || '天井狙い'}</div>
+                <div className="target-row-range">{t.from}G〜{to < 9999 ? to + 'G' : ''}</div>
+                {statusText && (
+                  <div className={`target-row-status${statusGray ? ' ts-gray' : ''}`}>{statusText}</div>
+                )}
+              </div>
+            );
+          })}
+        </div>
       )}
     </div>
   );
@@ -482,36 +597,23 @@ function App() {
     <div>
       <h1>HYENA 期待値ツール</h1>
 
-      {tab !== 'cz' && (
+      {tab !== 'list' && (
         <div className="card" style={{marginBottom: 20}}>
-          <div className="section-title">機種を選択</div>
-          <select value={machineId} onChange={e => setMachineId(Number(e.target.value))}>
-            <optgroup label="─── 天井あり機種 ───">
-              {okMachines.map(m => (
-                <option key={m.id} value={m.id}>
-                  {m.name}（天井{m.ceiling}G{m.cz_ceiling ? ` / CZ${m.cz_ceiling}G` : ''}）
-                </option>
-              ))}
-            </optgroup>
-            <optgroup label="─── 天井なし / データなし ───">
-              {otherMachines.map(m => (
-                <option key={m.id} value={m.id}>{m.name}</option>
-              ))}
-            </optgroup>
-          </select>
+          <div className="section-title" style={{marginBottom:8}}>機種を選択</div>
+          <MachineSearch value={machineId} onChange={setMachineId} />
         </div>
       )}
 
       <div className="tab-bar">
-        <div className={`tab ${tab === 'check' ? 'active' : ''}`} onClick={() => setTab('check')}>期待値チェック</div>
-        <div className={`tab ${tab === 'cz' ? 'active' : ''}`} onClick={() => setTab('cz')}>CZ期待値</div>
+        <div className={`tab ${tab === 'check' ? 'active' : ''}`} onClick={() => setTab('check')}>天井狙い</div>
+        <div className={`tab ${tab === 'cz' ? 'active' : ''}`} onClick={() => setTab('cz')}>CZ・ゾーン狙い</div>
         <div className={`tab ${tab === 'table' ? 'active' : ''}`} onClick={() => setTab('table')}>期待値表</div>
         <div className={`tab ${tab === 'list' ? 'active' : ''}`} onClick={() => setTab('list')}>機種一覧</div>
       </div>
 
       <div className="card">
-        {tab === 'check' && <CheckTab machine={machine} />}
-        {tab === 'cz' && <CzTab />}
+        {tab === 'check' && <CheckTab key={machine.id} machine={machine} />}
+        {tab === 'cz' && <CzZoneTab key={machine.id} machine={machine} />}
         {tab === 'table' && <TableTab machine={machine} />}
         {tab === 'list' && (
           <div>
