@@ -338,7 +338,7 @@ function CheckTab({ machine }) {
                   : `${gNum}G〜天井の期待値（5.6枚交換）`}
               </div>
               <div style={{display:'grid',gridTemplateColumns:'5em 1fr',gap:'8px 16px',alignItems:'baseline',marginTop:8}}>
-                <span style={{color:'#888',fontSize:'0.82rem',textAlign:'right'}}>総損益</span>
+                <span style={{color:'#888',fontSize:'0.82rem',textAlign:'right'}}>期待値</span>
                 <span className={`result-value ${evClass}`}>{formatEv(ev)}</span>
                 {remainG > 0 && (() => {
                   const totalMin = Math.round(remainG / 800 * 60);
