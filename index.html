@@ -364,6 +364,8 @@ function CheckTab({ machine }) {
 }
 
 function TableTab({ machine }) {
+  const [tableMode, setTableMode] = React.useState('normal');
+  
   const hasData = machine.status === 'ok' && machine.evTable.length > 0;
 
   if (!hasData) {
@@ -384,9 +386,18 @@ function TableTab({ machine }) {
     );
   }
 
-  const ev = machine.evTable;
+  // 表示するテーブルを決定
+  const hasShort = machine.ceilingShort && machine.ceilingShort.length > 0 
+                   && machine.ceilingShort[0].evTableShort;
+  
+  const currentTable = tableMode === 'normal' ? machine.evTable 
+                       : machine.ceilingShort[0].evTableShort || machine.evTable;
+  const currentCeiling = tableMode === 'normal' ? machine.ceiling
+                         : machine.ceilingShort[0].ceiling;
+  const tableLabel = tableMode === 'normal' ? '通常天井' : machine.ceilingShort[0].label;
+
   let prevAbove = false;
-  const rows = ev.map((row, i) => {
+  const rows = currentTable.map((row, i) => {
     const above = row.ev56 >= 1500;
     const boundary = above && !prevAbove && i > 0;
     prevAbove = above;
@@ -401,11 +412,34 @@ function TableTab({ machine }) {
         <div className="machine-name">
           {machine.name}
           <StatusPill status={machine.status} />
-          {machine.ceiling && <span className="ceiling-badge">天井 {machine.ceiling}G</span>}
+          {currentCeiling && <span className="ceiling-badge">天井 {currentCeiling}G</span>}
           {machine.cz_ceiling && <span className="cz-badge">CZ {machine.cz_ceiling}G</span>}
         </div>
         {machine.ceiling_note && <div className="ceiling-note">⚠ {machine.ceiling_note}</div>}
       </div>
+      
+      {hasShort && (
+        <div style={{marginBottom: 12, display: 'flex', gap: 8, flexWrap: 'wrap'}}>
+          <button 
+            className={`btn-small ${tableMode === 'normal' ? 'active' : ''}`}
+            onClick={() => setTableMode('normal')}
+            style={{padding: '6px 12px', fontSize: '0.85rem', border: '1px solid #666', borderRadius: 4, cursor: 'pointer', background: tableMode === 'normal' ? '#f0c060' : '#333', color: tableMode === 'normal' ? '#000' : '#ccc'}}
+          >
+            通常天井 {machine.ceiling}G
+          </button>
+          {machine.ceilingShort.map((cs, i) => (
+            <button
+              key={i}
+              className={`btn-small ${tableMode === `short-${i}` ? 'active' : ''}`}
+              onClick={() => setTableMode(`short-${i}`)}
+              style={{padding: '6px 12px', fontSize: '0.85rem', border: '1px solid #666', borderRadius: 4, cursor: 'pointer', background: tableMode === `short-${i}` ? '#f0c060' : '#333', color: tableMode === `short-${i}` ? '#000' : '#ccc'}}
+            >
+              {cs.label} {cs.ceiling}G
+            </button>
+          ))}
+        </div>
+      )}
+      
       <table>
         <thead>
           <tr>
@@ -428,7 +462,6 @@ function TableTab({ machine }) {
     </div>
   );
 }
-
 function CzZoneTab({ machine }) {
   const [czG, setCzG] = React.useState('');
   const [isReset, setIsReset] = React.useState(false);
