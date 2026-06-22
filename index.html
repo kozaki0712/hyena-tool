@@ -427,16 +427,20 @@ function TableTab({ machine }) {
           >
             通常天井 {machine.ceiling}G
           </button>
-          {machine.ceilingShort.map((cs, i) => (
-            <button
-              key={i}
-              className={`btn-small ${tableMode === `short-${i}` ? 'active' : ''}`}
-              onClick={() => setTableMode(`short-${i}`)}
-              style={{padding: '6px 12px', fontSize: '0.85rem', border: '1px solid #666', borderRadius: 4, cursor: 'pointer', background: tableMode === `short-${i}` ? '#f0c060' : '#333', color: tableMode === `short-${i}` ? '#000' : '#ccc'}}
-            >
-              {cs.label} {cs.ceiling}G
-            </button>
-          ))}
+          {machine.ceilingShort.map((cs, i) => {
+            const modeKey = 'short-' + i;
+            const isActive = tableMode === modeKey;
+            return (
+              <button
+                key={i}
+                className={'btn-small ' + (isActive ? 'active' : '')}
+                onClick={() => setTableMode(modeKey)}
+                style={{padding: '6px 12px', fontSize: '0.85rem', border: '1px solid #666', borderRadius: 4, cursor: 'pointer', background: isActive ? '#f0c060' : '#333', color: isActive ? '#000' : '#ccc'}}
+              >
+                {cs.label} {cs.ceiling}G
+              </button>
+            );
+          })}
         </div>
       )}
       
