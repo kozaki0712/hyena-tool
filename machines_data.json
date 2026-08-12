@@ -87,7 +87,67 @@
     "status": "ok",
     "cz_ceiling": null,
     "czEvTable": null,
-    "czEvTableReset": null
+    "czEvTableReset": null,
+    "ceilingShort": [
+      {
+        "label": "設定変更時",
+        "ceiling": 650
+      }
+    ],
+    "evTableShort": [
+      {
+        "g": 0,
+        "ev56": -2303
+      },
+      {
+        "g": 50,
+        "ev56": -1979
+      },
+      {
+        "g": 100,
+        "ev56": -1611
+      },
+      {
+        "g": 150,
+        "ev56": -1192
+      },
+      {
+        "g": 200,
+        "ev56": -715
+      },
+      {
+        "g": 250,
+        "ev56": -174
+      },
+      {
+        "g": 300,
+        "ev56": 442
+      },
+      {
+        "g": 350,
+        "ev56": 1143
+      },
+      {
+        "g": 400,
+        "ev56": 1940
+      },
+      {
+        "g": 450,
+        "ev56": 2846
+      },
+      {
+        "g": 500,
+        "ev56": 3876
+      },
+      {
+        "g": 550,
+        "ev56": 5048
+      },
+      {
+        "g": 600,
+        "ev56": 6380
+      }
+    ]
   },
   {
     "name": "スロット　ソードアート・オンラインＩＩ",
@@ -193,25 +253,46 @@
     "status": "ok",
     "cz_ceiling": 499,
     "czEvTable": null,
-    "czEvTableReset": null
+    "czEvTableReset": null,
+    "ceilingShort": [
+      {
+        "label": "設定変更時",
+        "ceiling": 256
+      },
+      {
+        "label": "初回上位CZ失敗後",
+        "ceiling": 256
+      },
+      {
+        "label": "AT終了後の抽選",
+        "ceiling": 350
+      },
+      {
+        "label": "GGOモード「キリト」滞在時",
+        "ceiling": 500
+      }
+    ]
   },
   {
     "name": "スマスロ　ＢＩＲＤＩＥ　ＷＩＮＧ　‐Ｇｏｌｆ　Ｇｉｒｌｓ’　Ｓｔｏｒｙ‐",
     "ceiling": null,
     "evTable": [],
-    "status": "not_found"
+    "status": "not_found",
+    "ceilingShort": []
   },
   {
     "name": "ネオアイムジャグラーＥＸ",
     "ceiling": null,
     "evTable": [],
-    "status": "no_ceiling"
+    "status": "no_ceiling",
+    "ceilingShort": []
   },
   {
     "name": "マイジャグラーＶ",
     "ceiling": null,
     "evTable": [],
-    "status": "no_ceiling"
+    "status": "no_ceiling",
+    "ceilingShort": []
   },
   {
     "name": "Ｌ　東京喰種",
@@ -407,13 +488,62 @@
         "g": 180,
         "ev56": 3834
       }
+    ],
+    "ceilingShort": [
+      {
+        "label": "設定変更時",
+        "ceiling": 200
+      }
+    ],
+    "evTableShort": [
+      {
+        "g": 0,
+        "ev56": -279
+      },
+      {
+        "g": 20,
+        "ev56": 68
+      },
+      {
+        "g": 40,
+        "ev56": 438
+      },
+      {
+        "g": 60,
+        "ev56": 833
+      },
+      {
+        "g": 80,
+        "ev56": 1255
+      },
+      {
+        "g": 100,
+        "ev56": 1705
+      },
+      {
+        "g": 120,
+        "ev56": 2186
+      },
+      {
+        "g": 140,
+        "ev56": 2700
+      },
+      {
+        "g": 160,
+        "ev56": 3249
+      },
+      {
+        "g": 180,
+        "ev56": 3834
+      }
     ]
   },
   {
     "name": "キングハナハナ‐３０",
     "ceiling": null,
     "evTable": [],
-    "status": "no_ceiling"
+    "status": "no_ceiling",
+    "ceilingShort": []
   },
   {
     "name": "スマスロ北斗の拳",
@@ -503,25 +633,29 @@
     "status": "ok",
     "cz_ceiling": null,
     "czEvTable": null,
-    "czEvTableReset": null
+    "czEvTableReset": null,
+    "ceilingShort": []
   },
   {
     "name": "ゴーゴージャグラー３",
     "ceiling": null,
     "evTable": [],
-    "status": "no_ceiling"
+    "status": "no_ceiling",
+    "ceilingShort": []
   },
   {
     "name": "沖ドキ！ＢＬＡＣＫ",
     "ceiling": null,
     "evTable": [],
-    "status": "no_ceiling"
+    "status": "no_ceiling",
+    "ceilingShort": []
   },
   {
     "name": "ファンキージャグラー２",
     "ceiling": null,
     "evTable": [],
-    "status": "no_ceiling"
+    "status": "no_ceiling",
+    "ceilingShort": []
   },
   {
     "name": "スマスロ　甲鉄城のカバネリ　海門（うなと）決戦",
@@ -611,13 +745,78 @@
     "status": "ok",
     "cz_ceiling": null,
     "czEvTable": null,
-    "czEvTableReset": null
+    "czEvTableReset": null,
+    "ceilingShort": [
+      {
+        "label": "設定変更後",
+        "ceiling": 596
+      },
+      {
+        "label": "ST駆け抜け後",
+        "ceiling": 596
+      },
+      {
+        "label": "景之ST後",
+        "ceiling": 596
+      }
+    ],
+    "evTableShort": [
+      {
+        "g": 0,
+        "ev56": -293
+      },
+      {
+        "g": 50,
+        "ev56": 203
+      },
+      {
+        "g": 100,
+        "ev56": 754
+      },
+      {
+        "g": 150,
+        "ev56": 1364
+      },
+      {
+        "g": 200,
+        "ev56": 2040
+      },
+      {
+        "g": 250,
+        "ev56": 2791
+      },
+      {
+        "g": 300,
+        "ev56": 3623
+      },
+      {
+        "g": 350,
+        "ev56": 4545
+      },
+      {
+        "g": 400,
+        "ev56": 5568
+      },
+      {
+        "g": 450,
+        "ev56": 6702
+      },
+      {
+        "g": 500,
+        "ev56": 7960
+      },
+      {
+        "g": 550,
+        "ev56": 9355
+      }
+    ]
   },
   {
     "name": "ハッピージャグラーＶ　ＩＩＩ",
     "ceiling": null,
     "evTable": [],
-    "status": "no_ceiling"
+    "status": "no_ceiling",
+    "ceilingShort": []
   },
   {
     "name": "Ｌパチスロ　革命機ヴァルヴレイヴ２",
@@ -747,7 +946,8 @@
     "status": "ok",
     "cz_ceiling": 999,
     "czEvTable": null,
-    "czEvTableReset": null
+    "czEvTableReset": null,
+    "ceilingShort": []
   },
   {
     "name": "スマスロ　北斗の拳　転生の章２",
@@ -838,7 +1038,8 @@
     "cz_ceiling": null,
     "ceiling_note": "あべし単位（要確認）",
     "czEvTable": null,
-    "czEvTableReset": null
+    "czEvTableReset": null,
+    "ceilingShort": []
   },
   {
     "name": "スマスロ　ミリオンゴッド‐神々の軌跡‐",
@@ -972,7 +1173,59 @@
     "status": "ok",
     "cz_ceiling": null,
     "czEvTable": null,
-    "czEvTableReset": null
+    "czEvTableReset": null,
+    "ceilingShort": [
+      {
+        "label": "短縮後",
+        "ceiling": 510
+      }
+    ],
+    "evTableShort": [
+      {
+        "g": 0,
+        "ev56": -1492
+      },
+      {
+        "g": 50,
+        "ev56": -1240
+      },
+      {
+        "g": 100,
+        "ev56": -966
+      },
+      {
+        "g": 150,
+        "ev56": -666
+      },
+      {
+        "g": 200,
+        "ev56": -340
+      },
+      {
+        "g": 250,
+        "ev56": 16
+      },
+      {
+        "g": 300,
+        "ev56": 404
+      },
+      {
+        "g": 350,
+        "ev56": 828
+      },
+      {
+        "g": 400,
+        "ev56": 1289
+      },
+      {
+        "g": 450,
+        "ev56": 1793
+      },
+      {
+        "g": 500,
+        "ev56": 2342
+      }
+    ]
   },
   {
     "name": "押忍！番長ＺＥＲＯ",
@@ -1030,7 +1283,8 @@
     "status": "ok",
     "cz_ceiling": null,
     "czEvTable": null,
-    "czEvTableReset": null
+    "czEvTableReset": null,
+    "ceilingShort": []
   },
   {
     "name": "スマスロモンキーターンＶ",
@@ -1104,19 +1358,22 @@
     "status": "ok",
     "cz_ceiling": null,
     "czEvTable": null,
-    "czEvTableReset": null
+    "czEvTableReset": null,
+    "ceilingShort": []
   },
   {
     "name": "沖ドキ！ゴージャス　３０Φ",
     "ceiling": null,
     "evTable": [],
-    "status": "no_ceiling"
+    "status": "no_ceiling",
+    "ceilingShort": []
   },
   {
     "name": "ニューキングハナハナＶ‐３０",
     "ceiling": null,
     "evTable": [],
-    "status": "no_ceiling"
+    "status": "no_ceiling",
+    "ceilingShort": []
   },
   {
     "name": "スマスロ　ゴッドイーター　リザレクション",
@@ -1206,7 +1463,63 @@
     "status": "ok",
     "cz_ceiling": null,
     "czEvTable": null,
-    "czEvTableReset": null
+    "czEvTableReset": null,
+    "ceilingShort": [
+      {
+        "label": "設定変更時",
+        "ceiling": 600
+      }
+    ],
+    "evTableShort": [
+      {
+        "g": 0,
+        "ev56": -1622
+      },
+      {
+        "g": 50,
+        "ev56": -1211
+      },
+      {
+        "g": 100,
+        "ev56": -742
+      },
+      {
+        "g": 150,
+        "ev56": -207
+      },
+      {
+        "g": 200,
+        "ev56": 404
+      },
+      {
+        "g": 250,
+        "ev56": 1101
+      },
+      {
+        "g": 300,
+        "ev56": 1897
+      },
+      {
+        "g": 350,
+        "ev56": 2805
+      },
+      {
+        "g": 400,
+        "ev56": 3841
+      },
+      {
+        "g": 450,
+        "ev56": 5024
+      },
+      {
+        "g": 500,
+        "ev56": 6373
+      },
+      {
+        "g": 550,
+        "ev56": 7914
+      }
+    ]
   },
   {
     "name": "パチスロ　かぐや様は告らせたい",
@@ -1304,45 +1617,192 @@
     "status": "ok",
     "cz_ceiling": null,
     "czEvTable": null,
-    "czEvTableReset": null
+    "czEvTableReset": null,
+    "ceilingShort": [
+      {
+        "label": "設定変更時",
+        "ceiling": 1100
+      }
+    ]
   },
   {
     "name": "スマスロ　化物語",
-    "ceiling": null,
-    "evTable": [],
-    "status": "fetch_error",
-    "error": "Request failed with status code 404"
+    "ceiling": 1000,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1554
+      },
+      {
+        "g": 50,
+        "ev56": -1508
+      },
+      {
+        "g": 100,
+        "ev56": -1454
+      },
+      {
+        "g": 150,
+        "ev56": -1388
+      },
+      {
+        "g": 200,
+        "ev56": -1309
+      },
+      {
+        "g": 250,
+        "ev56": -1215
+      },
+      {
+        "g": 300,
+        "ev56": -1101
+      },
+      {
+        "g": 350,
+        "ev56": -964
+      },
+      {
+        "g": 400,
+        "ev56": -799
+      },
+      {
+        "g": 450,
+        "ev56": -601
+      },
+      {
+        "g": 500,
+        "ev56": -363
+      },
+      {
+        "g": 550,
+        "ev56": -77
+      },
+      {
+        "g": 600,
+        "ev56": 267
+      },
+      {
+        "g": 650,
+        "ev56": 680
+      },
+      {
+        "g": 700,
+        "ev56": 1177
+      },
+      {
+        "g": 750,
+        "ev56": 1775
+      },
+      {
+        "g": 800,
+        "ev56": 2493
+      },
+      {
+        "g": 850,
+        "ev56": 3357
+      },
+      {
+        "g": 900,
+        "ev56": 4396
+      },
+      {
+        "g": 950,
+        "ev56": 5645
+      }
+    ],
+    "status": "ok",
+    "ceilingShort": [
+      {
+        "label": "設定変更時",
+        "ceiling": 600,
+        "evTableShort": [
+          {
+            "g": 0,
+            "ev56": -1337
+          },
+          {
+            "g": 50,
+            "ev56": -1126
+          },
+          {
+            "g": 100,
+            "ev56": -872
+          },
+          {
+            "g": 150,
+            "ev56": -566
+          },
+          {
+            "g": 200,
+            "ev56": -199
+          },
+          {
+            "g": 250,
+            "ev56": 242
+          },
+          {
+            "g": 300,
+            "ev56": 773
+          },
+          {
+            "g": 350,
+            "ev56": 1411
+          },
+          {
+            "g": 400,
+            "ev56": 2179
+          },
+          {
+            "g": 450,
+            "ev56": 3101
+          },
+          {
+            "g": 500,
+            "ev56": 4210
+          },
+          {
+            "g": 550,
+            "ev56": 5543
+          }
+        ]
+      }
+    ]
   },
   {
     "name": "アイムジャグラーＥＸ",
     "ceiling": null,
     "evTable": [],
-    "status": "no_ceiling"
+    "status": "no_ceiling",
+    "ceilingShort": []
   },
   {
     "name": "パチスロ　からくりサーカス",
     "ceiling": null,
     "evTable": [],
     "status": "fetch_error",
-    "error": "Invalid URL"
+    "error": "Invalid URL",
+    "ceilingShort": []
   },
   {
     "name": "スマート沖スロ　ドラゴンハナハナ～閃光～",
     "ceiling": null,
     "evTable": [],
-    "status": "no_ceiling"
+    "status": "no_ceiling",
+    "ceilingShort": []
   },
   {
     "name": "スマート沖スロ　スターハナハナ",
     "ceiling": null,
     "evTable": [],
-    "status": "no_ceiling"
+    "status": "no_ceiling",
+    "ceilingShort": []
   },
   {
     "name": "スマスロ　沖ドキ！ＤＵＯ　アンコール",
     "ceiling": null,
     "evTable": [],
-    "status": "no_ceiling"
+    "status": "no_ceiling",
+    "ceilingShort": []
   },
   {
     "name": "Ｌパチスロ　炎炎ノ消防隊２",
@@ -1421,13 +1881,15 @@
     "cz_ceiling": null,
     "ceiling_note": "RB天井850G / AT天井2000G",
     "czEvTable": null,
-    "czEvTableReset": null
+    "czEvTableReset": null,
+    "ceilingShort": []
   },
   {
     "name": "新ハナビ",
     "ceiling": null,
     "evTable": [],
-    "status": "no_ceiling_page"
+    "status": "no_ceiling_page",
+    "ceilingShort": []
   },
   {
     "name": "パチスロ甲鉄城のカバネリ",
@@ -1517,31 +1979,36 @@
     "status": "ok",
     "cz_ceiling": null,
     "czEvTable": null,
-    "czEvTableReset": null
+    "czEvTableReset": null,
+    "ceilingShort": []
   },
   {
     "name": "ジャグラーガールズＳＳ",
     "ceiling": null,
     "evTable": [],
-    "status": "no_ceiling"
+    "status": "no_ceiling",
+    "ceilingShort": []
   },
   {
     "name": "ミスタージャグラー",
     "ceiling": null,
     "evTable": [],
-    "status": "no_ceiling"
+    "status": "no_ceiling",
+    "ceilingShort": []
   },
   {
     "name": "ウルトラミラクルジャグラー",
     "ceiling": null,
     "evTable": [],
-    "status": "no_ceiling"
+    "status": "no_ceiling",
+    "ceilingShort": []
   },
   {
     "name": "スマスロスーパーブラックジャック",
     "ceiling": null,
     "evTable": [],
-    "status": "no_table"
+    "status": "no_table",
+    "ceilingShort": []
   },
   {
     "name": "スマスロ　マギアレコード　魔法少女まどか☆マギカ外伝",
@@ -1600,7 +2067,8 @@
     "cz_ceiling": null,
     "ceiling_note": "950pt",
     "czEvTable": null,
-    "czEvTableReset": null
+    "czEvTableReset": null,
+    "ceilingShort": []
   },
   {
     "name": "いざ！番長",
@@ -1690,7 +2158,67 @@
     "status": "ok",
     "cz_ceiling": null,
     "czEvTable": null,
-    "czEvTableReset": null
+    "czEvTableReset": null,
+    "ceilingShort": [
+      {
+        "label": "リセット後",
+        "ceiling": 600
+      },
+      {
+        "label": "設定変更時",
+        "ceiling": 600
+      }
+    ],
+    "evTableShort": [
+      {
+        "g": 0,
+        "ev56": -2470
+      },
+      {
+        "g": 50,
+        "ev56": -2062
+      },
+      {
+        "g": 100,
+        "ev56": -1603
+      },
+      {
+        "g": 150,
+        "ev56": -1087
+      },
+      {
+        "g": 200,
+        "ev56": -507
+      },
+      {
+        "g": 250,
+        "ev56": 144
+      },
+      {
+        "g": 300,
+        "ev56": 877
+      },
+      {
+        "g": 350,
+        "ev56": 1700
+      },
+      {
+        "g": 400,
+        "ev56": 2625
+      },
+      {
+        "g": 450,
+        "ev56": 3665
+      },
+      {
+        "g": 500,
+        "ev56": 4833
+      },
+      {
+        "g": 550,
+        "ev56": 6147
+      }
+    ]
   },
   {
     "name": "スマスロ鉄拳６",
@@ -1760,7 +2288,8 @@
     "status": "ok",
     "cz_ceiling": null,
     "czEvTable": null,
-    "czEvTableReset": null
+    "czEvTableReset": null,
+    "ceilingShort": []
   },
   {
     "name": "Ｌパチスロ　機動戦士ガンダムユニコーン　覚醒ＤＲＩＶＥ",
@@ -1932,13 +2461,15 @@
         "g": 350,
         "ev56": 5992
       }
-    ]
+    ],
+    "ceilingShort": []
   },
   {
     "name": "真打　吉宗",
     "ceiling": null,
     "evTable": [],
-    "status": "no_table"
+    "status": "no_table",
+    "ceilingShort": []
   },
   {
     "name": "スマスロ　バイオハザードＲＥ：３",
@@ -2028,7 +2559,8 @@
     "status": "ok",
     "cz_ceiling": null,
     "czEvTable": null,
-    "czEvTableReset": null
+    "czEvTableReset": null,
+    "ceilingShort": []
   },
   {
     "name": "スマスロ　ビッグドリーム　ＴＨＥ　ＧＯＬＤＥＮ　ＰＵＳＨＥＲ",
@@ -2153,7 +2685,8 @@
     ],
     "status": "ok",
     "czEvTable": null,
-    "czEvTableReset": null
+    "czEvTableReset": null,
+    "ceilingShort": []
   },
   {
     "name": "スマスロスーパーリオエース２",
@@ -2223,13 +2756,15 @@
     "status": "ok",
     "cz_ceiling": null,
     "czEvTable": null,
-    "czEvTableReset": null
+    "czEvTableReset": null,
+    "ceilingShort": []
   },
   {
     "name": "パチスロディスクアップ２",
     "ceiling": null,
     "evTable": [],
-    "status": "no_ceiling_page"
+    "status": "no_ceiling_page",
+    "ceilingShort": []
   },
   {
     "name": "Ｌ戦国乙女４　戦乱に閃く炯眼の軍師",
@@ -2299,13 +2834,15 @@
     "status": "ok",
     "cz_ceiling": null,
     "czEvTable": null,
-    "czEvTableReset": null
+    "czEvTableReset": null,
+    "ceilingShort": []
   },
   {
     "name": "パチスロ交響詩篇エウレカセブンＨＩ‐ＥＶＯＬＵＴＩＯＮ　ＺＥＲＯ　ＴＹＰＥ‐ＡＲＴ",
     "ceiling": null,
     "evTable": [],
-    "status": "no_ceiling_page"
+    "status": "no_ceiling_page",
+    "ceilingShort": []
   },
   {
     "name": "チバリヨ２",
@@ -2395,7 +2932,8 @@
     "status": "ok",
     "cz_ceiling": null,
     "czEvTable": null,
-    "czEvTableReset": null
+    "czEvTableReset": null,
+    "ceilingShort": []
   },
   {
     "name": "スマスロ　モンスターハンターライズ",
@@ -2485,13 +3023,15 @@
     "status": "ok",
     "cz_ceiling": null,
     "czEvTable": null,
-    "czEvTableReset": null
+    "czEvTableReset": null,
+    "ceilingShort": []
   },
   {
     "name": "Ａ‐ＳＬＯＴ＋　ディスクアップ　ＵＬＴＲＡＲＥＭＩＸ",
     "ceiling": null,
     "evTable": [],
-    "status": "no_ceiling"
+    "status": "no_ceiling",
+    "ceilingShort": []
   },
   {
     "name": "Ｌ　ＴｏＬＯＶＥるダークネス　ＴＲＡＮＣＥ　ｖｅｒ．８．７",
@@ -2579,9 +3119,67 @@
       }
     ],
     "status": "ok",
-    "cz_ceiling": null,
-    "czEvTable": null,
-    "czEvTableReset": null
+    "kirihal": null,
+    "ceilingShort": [
+      {
+        "label": "設定変更時",
+        "ceiling": 650,
+        "evTableShort": [
+          {
+            "g": 0,
+            "ev56": -2152
+          },
+          {
+            "g": 50,
+            "ev56": -1829
+          },
+          {
+            "g": 100,
+            "ev56": -1461
+          },
+          {
+            "g": 150,
+            "ev56": -1041
+          },
+          {
+            "g": 200,
+            "ev56": -562
+          },
+          {
+            "g": 250,
+            "ev56": -16
+          },
+          {
+            "g": 300,
+            "ev56": 607
+          },
+          {
+            "g": 350,
+            "ev56": 1318
+          },
+          {
+            "g": 400,
+            "ev56": 2128
+          },
+          {
+            "g": 450,
+            "ev56": 3053
+          },
+          {
+            "g": 500,
+            "ev56": 4107
+          },
+          {
+            "g": 550,
+            "ev56": 5309
+          },
+          {
+            "g": 600,
+            "ev56": 6680
+          }
+        ]
+      }
+    ]
   },
   {
     "name": "スマスロ　東京リベンジャーズ",
@@ -2687,7 +3285,8 @@
     "status": "ok",
     "cz_ceiling": null,
     "czEvTable": null,
-    "czEvTableReset": null
+    "czEvTableReset": null,
+    "ceilingShort": []
   },
   {
     "name": "スマスロ　新鬼武者３",
@@ -2777,13 +3376,15 @@
     "status": "ok",
     "cz_ceiling": null,
     "czEvTable": null,
-    "czEvTableReset": null
+    "czEvTableReset": null,
+    "ceilingShort": []
   },
   {
     "name": "スマスロ　ハナビ",
     "ceiling": null,
     "evTable": [],
-    "status": "no_ceiling_page"
+    "status": "no_ceiling_page",
+    "ceilingShort": []
   },
   {
     "name": "Ｌ　アズールレーン　ＴＨＥ　ＡＮＩＭＡＴＩＯＮ",
@@ -2822,19 +3423,22 @@
     "cz_ceiling": null,
     "ceiling_note": "ボーナス間天井350G（AT間天井は2000G）",
     "czEvTable": null,
-    "czEvTableReset": null
+    "czEvTableReset": null,
+    "ceilingShort": []
   },
   {
     "name": "クレアの秘宝伝　～はじまりの扉と太陽の石～　ボーナストリガーｖｅｒ．",
     "ceiling": null,
     "evTable": [],
-    "status": "no_ceiling_page"
+    "status": "no_ceiling_page",
+    "ceilingShort": []
   },
   {
     "name": "ＳＨＡＫＥ　ＢＯＮＵＳ　ＴＲＩＧＧＥＲ",
     "ceiling": null,
     "evTable": [],
-    "status": "no_ceiling_page"
+    "status": "no_ceiling_page",
+    "ceilingShort": []
   },
   {
     "name": "Ｌ　無職転生　～異世界行ったら本気だす～",
@@ -2925,19 +3529,22 @@
     "cz_ceiling": null,
     "ceiling_note": "ステージチェンジ回数単位（要確認）",
     "czEvTable": null,
-    "czEvTableReset": null
+    "czEvTableReset": null,
+    "ceilingShort": []
   },
   {
     "name": "Ｌパチスロうみねこのなく頃に２",
     "ceiling": null,
     "evTable": [],
-    "status": "no_table"
+    "status": "no_table",
+    "ceilingShort": []
   },
   {
     "name": "スマスロ　サンダーＶ",
     "ceiling": null,
     "evTable": [],
-    "status": "no_ceiling_page"
+    "status": "no_ceiling_page",
+    "ceilingShort": []
   },
   {
     "name": "Ｌ虚構推理",
@@ -3027,7 +3634,71 @@
     "status": "ok",
     "cz_ceiling": null,
     "czEvTable": null,
-    "czEvTableReset": null
+    "czEvTableReset": null,
+    "ceilingShort": [
+      {
+        "label": "設定変更後",
+        "ceiling": 700
+      }
+    ],
+    "evTableShort": [
+      {
+        "g": 0,
+        "ev56": -1958
+      },
+      {
+        "g": 50,
+        "ev56": -1660
+      },
+      {
+        "g": 100,
+        "ev56": -1318
+      },
+      {
+        "g": 150,
+        "ev56": -928
+      },
+      {
+        "g": 200,
+        "ev56": -482
+      },
+      {
+        "g": 250,
+        "ev56": 28
+      },
+      {
+        "g": 300,
+        "ev56": 610
+      },
+      {
+        "g": 350,
+        "ev56": 1276
+      },
+      {
+        "g": 400,
+        "ev56": 2037
+      },
+      {
+        "g": 450,
+        "ev56": 2906
+      },
+      {
+        "g": 500,
+        "ev56": 3900
+      },
+      {
+        "g": 550,
+        "ev56": 5036
+      },
+      {
+        "g": 600,
+        "ev56": 6334
+      },
+      {
+        "g": 650,
+        "ev56": 7817
+      }
+    ]
   },
   {
     "name": "スマスロヨルムンガンド",
@@ -3117,7 +3788,21 @@
     "status": "ok",
     "cz_ceiling": null,
     "czEvTable": null,
-    "czEvTableReset": null
+    "czEvTableReset": null,
+    "ceilingShort": [
+      {
+        "label": "設定変更後",
+        "ceiling": 450
+      },
+      {
+        "label": "恥の世紀失敗後",
+        "ceiling": 450
+      },
+      {
+        "label": "ゲーム数カウンタの挙動",
+        "ceiling": 450
+      }
+    ]
   },
   {
     "name": "七つの魔剣が支配する",
@@ -3207,13 +3892,15 @@
     "status": "ok",
     "cz_ceiling": null,
     "czEvTable": null,
-    "czEvTableReset": null
+    "czEvTableReset": null,
+    "ceilingShort": []
   },
   {
     "name": "アレックス　ブライト",
     "ceiling": null,
     "evTable": [],
-    "status": "no_ceiling_page"
+    "status": "no_ceiling_page",
+    "ceilingShort": []
   },
   {
     "name": "Ｌ主役は銭形５",
@@ -3323,7 +4010,83 @@
     "status": "ok",
     "cz_ceiling": null,
     "czEvTable": null,
-    "czEvTableReset": null
+    "czEvTableReset": null,
+    "ceilingShort": [
+      {
+        "label": "設定変更時",
+        "ceiling": 850
+      }
+    ],
+    "evTableShort": [
+      {
+        "g": 0,
+        "ev56": -2178
+      },
+      {
+        "g": 50,
+        "ev56": -1896
+      },
+      {
+        "g": 100,
+        "ev56": -1581
+      },
+      {
+        "g": 150,
+        "ev56": -1230
+      },
+      {
+        "g": 200,
+        "ev56": -837
+      },
+      {
+        "g": 250,
+        "ev56": -399
+      },
+      {
+        "g": 300,
+        "ev56": 91
+      },
+      {
+        "g": 350,
+        "ev56": 638
+      },
+      {
+        "g": 400,
+        "ev56": 1249
+      },
+      {
+        "g": 450,
+        "ev56": 1931
+      },
+      {
+        "g": 500,
+        "ev56": 2693
+      },
+      {
+        "g": 550,
+        "ev56": 3544
+      },
+      {
+        "g": 600,
+        "ev56": 4494
+      },
+      {
+        "g": 650,
+        "ev56": 5555
+      },
+      {
+        "g": 700,
+        "ev56": 6740
+      },
+      {
+        "g": 750,
+        "ev56": 8064
+      },
+      {
+        "g": 800,
+        "ev56": 9542
+      }
+    ]
   },
   {
     "name": "スマスロ　秘宝伝",
@@ -3397,7 +4160,55 @@
     "status": "ok",
     "cz_ceiling": null,
     "czEvTable": null,
-    "czEvTableReset": null
+    "czEvTableReset": null,
+    "ceilingShort": [
+      {
+        "label": "短縮後",
+        "ceiling": 499
+      }
+    ],
+    "evTableShort": [
+      {
+        "g": 0,
+        "ev56": -1766
+      },
+      {
+        "g": 50,
+        "ev56": -1415
+      },
+      {
+        "g": 100,
+        "ev56": -1004
+      },
+      {
+        "g": 150,
+        "ev56": -522
+      },
+      {
+        "g": 200,
+        "ev56": 41
+      },
+      {
+        "g": 250,
+        "ev56": 700
+      },
+      {
+        "g": 300,
+        "ev56": 1471
+      },
+      {
+        "g": 350,
+        "ev56": 2374
+      },
+      {
+        "g": 400,
+        "ev56": 3431
+      },
+      {
+        "g": 450,
+        "ev56": 4668
+      }
+    ]
   },
   {
     "name": "スマスロ　ゴブリンスレイヤーＩＩ",
@@ -3527,7 +4338,8 @@
     "status": "ok",
     "cz_ceiling": null,
     "czEvTable": null,
-    "czEvTableReset": null
+    "czEvTableReset": null,
+    "ceilingShort": []
   },
   {
     "name": "Ｌ範馬刃牙",
@@ -3593,19 +4405,69 @@
     "status": "ok",
     "cz_ceiling": null,
     "czEvTable": null,
-    "czEvTableReset": null
+    "czEvTableReset": null,
+    "ceilingShort": [
+      {
+        "label": "設定変更時",
+        "ceiling": 200
+      }
+    ],
+    "evTableShort": [
+      {
+        "g": 0,
+        "ev56": -1118
+      },
+      {
+        "g": 20,
+        "ev56": -789
+      },
+      {
+        "g": 40,
+        "ev56": -437
+      },
+      {
+        "g": 60,
+        "ev56": -60
+      },
+      {
+        "g": 80,
+        "ev56": 343
+      },
+      {
+        "g": 100,
+        "ev56": 774
+      },
+      {
+        "g": 120,
+        "ev56": 1235
+      },
+      {
+        "g": 140,
+        "ev56": 1729
+      },
+      {
+        "g": 160,
+        "ev56": 2256
+      },
+      {
+        "g": 180,
+        "ev56": 2820
+      }
+    ]
   },
   {
     "name": "アニマルスロットドッチ",
     "ceiling": null,
     "evTable": [],
-    "status": "no_ceiling_page"
+    "status": "no_ceiling_page",
+    "ceilingShort": []
   },
   {
     "name": "Ａ‐ＳＬＯＴ＋　異世界かるてっとＢＴ",
     "ceiling": null,
     "evTable": [],
-    "status": "no_ceiling"
+    "status": "no_ceiling",
+    "ceilingShort": []
   },
   {
     "name": "Ｌパチスロ　炎炎ノ消防隊",
@@ -3683,7 +4545,8 @@
     "status": "ok",
     "cz_ceiling": null,
     "czEvTable": null,
-    "czEvTableReset": null
+    "czEvTableReset": null,
+    "ceilingShort": []
   },
   {
     "name": "スマスロ　バイオハザード５",
@@ -3773,7 +4636,8 @@
     "status": "ok",
     "cz_ceiling": null,
     "czEvTable": null,
-    "czEvTableReset": null
+    "czEvTableReset": null,
+    "ceilingShort": []
   },
   {
     "name": "Ｌ少女☆歌劇　レヴュースタァライト　‐Ｔｈｅ　ＳＬＯＴ‐",
@@ -3855,7 +4719,8 @@
     "status": "ok",
     "cz_ceiling": null,
     "czEvTable": null,
-    "czEvTableReset": null
+    "czEvTableReset": null,
+    "ceilingShort": []
   },
   {
     "name": "Ｌ　ダーリン・イン・ザ・フランキス",
@@ -3921,7 +4786,47 @@
     "status": "ok",
     "cz_ceiling": null,
     "czEvTable": null,
-    "czEvTableReset": null
+    "czEvTableReset": null,
+    "ceilingShort": [
+      {
+        "label": "短縮後",
+        "ceiling": 390
+      }
+    ],
+    "evTableShort": [
+      {
+        "g": 0,
+        "ev56": -1332
+      },
+      {
+        "g": 50,
+        "ev56": -964
+      },
+      {
+        "g": 100,
+        "ev56": -513
+      },
+      {
+        "g": 150,
+        "ev56": 40
+      },
+      {
+        "g": 200,
+        "ev56": 719
+      },
+      {
+        "g": 250,
+        "ev56": 1550
+      },
+      {
+        "g": 300,
+        "ev56": 2570
+      },
+      {
+        "g": 350,
+        "ev56": 3820
+      }
+    ]
   },
   {
     "name": "スマスロネオプラネット",
@@ -3995,6 +4900,7112 @@
     "status": "ok",
     "cz_ceiling": null,
     "czEvTable": null,
-    "czEvTableReset": null
+    "czEvTableReset": null,
+    "ceilingShort": []
+  },
+  {
+    "name": "スマスロニューパルサーBT",
+    "ceiling": null,
+    "evTable": [],
+    "status": "no_table",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "スマスロ かぐや様は告らせたい",
+    "ceiling": 1050,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -2303
+      },
+      {
+        "g": 50,
+        "ev56": -2201
+      },
+      {
+        "g": 100,
+        "ev56": -2084
+      },
+      {
+        "g": 150,
+        "ev56": -1951
+      },
+      {
+        "g": 200,
+        "ev56": -1800
+      },
+      {
+        "g": 250,
+        "ev56": -1628
+      },
+      {
+        "g": 300,
+        "ev56": -1432
+      },
+      {
+        "g": 350,
+        "ev56": -1208
+      },
+      {
+        "g": 400,
+        "ev56": -953
+      },
+      {
+        "g": 450,
+        "ev56": -663
+      },
+      {
+        "g": 500,
+        "ev56": -332
+      },
+      {
+        "g": 550,
+        "ev56": 45
+      },
+      {
+        "g": 600,
+        "ev56": 474
+      },
+      {
+        "g": 650,
+        "ev56": 963
+      },
+      {
+        "g": 700,
+        "ev56": 1521
+      },
+      {
+        "g": 750,
+        "ev56": 2156
+      },
+      {
+        "g": 800,
+        "ev56": 2879
+      },
+      {
+        "g": 850,
+        "ev56": 3704
+      },
+      {
+        "g": 900,
+        "ev56": 4643
+      },
+      {
+        "g": 950,
+        "ev56": 5713
+      },
+      {
+        "g": 1000,
+        "ev56": 6932
+      },
+      {
+        "g": 1050,
+        "ev56": 8322
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [
+      {
+        "label": "設定変更時",
+        "ceiling": 100
+      },
+      {
+        "label": "設定変更時",
+        "ceiling": 800
+      },
+      {
+        "label": "設定変更時",
+        "ceiling": 200
+      }
+    ],
+    "evTableShort": []
+  },
+  {
+    "name": "ドラゴンハナハナ～閃光～-30",
+    "ceiling": null,
+    "evTable": [],
+    "status": "no_ceiling",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "バーサスリヴァイズ",
+    "ceiling": null,
+    "evTable": [],
+    "status": "no_ceiling",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "スマスロ痛いのは嫌なので防御力に極振りしたいと思います。",
+    "ceiling": null,
+    "evTable": [],
+    "status": "no_table",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "スマスロバジリスク～甲賀忍法帖～絆2 天膳 BLACK EDITION",
+    "ceiling": 300,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -683
+      },
+      {
+        "g": 30,
+        "ev56": -597
+      },
+      {
+        "g": 60,
+        "ev56": -490
+      },
+      {
+        "g": 90,
+        "ev56": -356
+      },
+      {
+        "g": 120,
+        "ev56": -189
+      },
+      {
+        "g": 150,
+        "ev56": 20
+      },
+      {
+        "g": 180,
+        "ev56": 281
+      },
+      {
+        "g": 210,
+        "ev56": 607
+      },
+      {
+        "g": 240,
+        "ev56": 1014
+      },
+      {
+        "g": 270,
+        "ev56": 1521
+      },
+      {
+        "g": 300,
+        "ev56": 2155
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "スマスロ 攻殻機動隊",
+    "ceiling": 950,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1644
+      },
+      {
+        "g": 50,
+        "ev56": -1541
+      },
+      {
+        "g": 100,
+        "ev56": -1423
+      },
+      {
+        "g": 150,
+        "ev56": -1287
+      },
+      {
+        "g": 200,
+        "ev56": -1130
+      },
+      {
+        "g": 250,
+        "ev56": -950
+      },
+      {
+        "g": 300,
+        "ev56": -743
+      },
+      {
+        "g": 350,
+        "ev56": -505
+      },
+      {
+        "g": 400,
+        "ev56": -232
+      },
+      {
+        "g": 450,
+        "ev56": 83
+      },
+      {
+        "g": 500,
+        "ev56": 445
+      },
+      {
+        "g": 550,
+        "ev56": 861
+      },
+      {
+        "g": 600,
+        "ev56": 1340
+      },
+      {
+        "g": 650,
+        "ev56": 1891
+      },
+      {
+        "g": 700,
+        "ev56": 2524
+      },
+      {
+        "g": 750,
+        "ev56": 3252
+      },
+      {
+        "g": 800,
+        "ev56": 4089
+      },
+      {
+        "g": 850,
+        "ev56": 5052
+      },
+      {
+        "g": 900,
+        "ev56": 6159
+      },
+      {
+        "g": 950,
+        "ev56": 7432
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [
+      {
+        "label": "設定変更時",
+        "ceiling": 699
+      },
+      {
+        "label": "設定変更時",
+        "ceiling": 350
+      }
+    ],
+    "evTableShort": []
+  },
+  {
+    "name": "吉宗",
+    "ceiling": 950,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -2648
+      },
+      {
+        "g": 50,
+        "ev56": -2502
+      },
+      {
+        "g": 100,
+        "ev56": -2337
+      },
+      {
+        "g": 150,
+        "ev56": -2151
+      },
+      {
+        "g": 200,
+        "ev56": -1942
+      },
+      {
+        "g": 250,
+        "ev56": -1705
+      },
+      {
+        "g": 300,
+        "ev56": -1439
+      },
+      {
+        "g": 350,
+        "ev56": -1138
+      },
+      {
+        "g": 400,
+        "ev56": -799
+      },
+      {
+        "g": 450,
+        "ev56": -417
+      },
+      {
+        "g": 500,
+        "ev56": 14
+      },
+      {
+        "g": 550,
+        "ev56": 500
+      },
+      {
+        "g": 600,
+        "ev56": 1048
+      },
+      {
+        "g": 650,
+        "ev56": 1666
+      },
+      {
+        "g": 700,
+        "ev56": 2363
+      },
+      {
+        "g": 750,
+        "ev56": 3149
+      },
+      {
+        "g": 800,
+        "ev56": 4035
+      },
+      {
+        "g": 850,
+        "ev56": 5034
+      },
+      {
+        "g": 900,
+        "ev56": 6161
+      },
+      {
+        "g": 950,
+        "ev56": 7431
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "スマスロ デビル メイ クライ 5 スタイリッシュトライブ",
+    "ceiling": 950,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1398
+      },
+      {
+        "g": 50,
+        "ev56": -1362
+      },
+      {
+        "g": 100,
+        "ev56": -1317
+      },
+      {
+        "g": 150,
+        "ev56": -1263
+      },
+      {
+        "g": 200,
+        "ev56": -1198
+      },
+      {
+        "g": 250,
+        "ev56": -1119
+      },
+      {
+        "g": 300,
+        "ev56": -1023
+      },
+      {
+        "g": 350,
+        "ev56": -908
+      },
+      {
+        "g": 400,
+        "ev56": -768
+      },
+      {
+        "g": 450,
+        "ev56": -598
+      },
+      {
+        "g": 500,
+        "ev56": -394
+      },
+      {
+        "g": 550,
+        "ev56": -146
+      },
+      {
+        "g": 600,
+        "ev56": 154
+      },
+      {
+        "g": 650,
+        "ev56": 517
+      },
+      {
+        "g": 700,
+        "ev56": 956
+      },
+      {
+        "g": 750,
+        "ev56": 1487
+      },
+      {
+        "g": 800,
+        "ev56": 2130
+      },
+      {
+        "g": 850,
+        "ev56": 2908
+      },
+      {
+        "g": 900,
+        "ev56": 3849
+      },
+      {
+        "g": 950,
+        "ev56": 4988
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "Lラブ嬢3～Wご指名はいかがですか?～",
+    "ceiling": 700,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1614
+      },
+      {
+        "g": 50,
+        "ev56": -1476
+      },
+      {
+        "g": 100,
+        "ev56": -1314
+      },
+      {
+        "g": 150,
+        "ev56": -1123
+      },
+      {
+        "g": 200,
+        "ev56": -900
+      },
+      {
+        "g": 250,
+        "ev56": -639
+      },
+      {
+        "g": 300,
+        "ev56": -332
+      },
+      {
+        "g": 350,
+        "ev56": 28
+      },
+      {
+        "g": 400,
+        "ev56": 450
+      },
+      {
+        "g": 450,
+        "ev56": 946
+      },
+      {
+        "g": 500,
+        "ev56": 1527
+      },
+      {
+        "g": 550,
+        "ev56": 2208
+      },
+      {
+        "g": 600,
+        "ev56": 3008
+      },
+      {
+        "g": 650,
+        "ev56": 3945
+      },
+      {
+        "g": 700,
+        "ev56": 5045
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [
+      {
+        "label": "設定変更時",
+        "ceiling": 500
+      }
+    ],
+    "evTableShort": []
+  },
+  {
+    "name": "HEY！エリートサラリーマン鏡",
+    "ceiling": 949,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1572
+      },
+      {
+        "g": 50,
+        "ev56": -1526
+      },
+      {
+        "g": 100,
+        "ev56": -1469
+      },
+      {
+        "g": 150,
+        "ev56": -1403
+      },
+      {
+        "g": 200,
+        "ev56": -1322
+      },
+      {
+        "g": 250,
+        "ev56": -1227
+      },
+      {
+        "g": 300,
+        "ev56": -1113
+      },
+      {
+        "g": 350,
+        "ev56": -976
+      },
+      {
+        "g": 400,
+        "ev56": -813
+      },
+      {
+        "g": 450,
+        "ev56": -618
+      },
+      {
+        "g": 500,
+        "ev56": -384
+      },
+      {
+        "g": 550,
+        "ev56": -106
+      },
+      {
+        "g": 600,
+        "ev56": 227
+      },
+      {
+        "g": 650,
+        "ev56": 625
+      },
+      {
+        "g": 700,
+        "ev56": 1101
+      },
+      {
+        "g": 750,
+        "ev56": 1669
+      },
+      {
+        "g": 800,
+        "ev56": 2348
+      },
+      {
+        "g": 850,
+        "ev56": 3160
+      },
+      {
+        "g": 900,
+        "ev56": 4129
+      },
+      {
+        "g": 949,
+        "ev56": 5263
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "忍魂参～奥義皆伝ノ章～",
+    "ceiling": 950,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1796
+      },
+      {
+        "g": 50,
+        "ev56": -1665
+      },
+      {
+        "g": 100,
+        "ev56": -1518
+      },
+      {
+        "g": 150,
+        "ev56": -1350
+      },
+      {
+        "g": 200,
+        "ev56": -1161
+      },
+      {
+        "g": 250,
+        "ev56": -947
+      },
+      {
+        "g": 300,
+        "ev56": -704
+      },
+      {
+        "g": 350,
+        "ev56": -429
+      },
+      {
+        "g": 400,
+        "ev56": -117
+      },
+      {
+        "g": 450,
+        "ev56": 236
+      },
+      {
+        "g": 500,
+        "ev56": 636
+      },
+      {
+        "g": 550,
+        "ev56": 1088
+      },
+      {
+        "g": 600,
+        "ev56": 1601
+      },
+      {
+        "g": 650,
+        "ev56": 2182
+      },
+      {
+        "g": 700,
+        "ev56": 2839
+      },
+      {
+        "g": 750,
+        "ev56": 3584
+      },
+      {
+        "g": 800,
+        "ev56": 4427
+      },
+      {
+        "g": 850,
+        "ev56": 5383
+      },
+      {
+        "g": 900,
+        "ev56": 6465
+      },
+      {
+        "g": 950,
+        "ev56": 7690
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [
+      {
+        "label": "設定変更時",
+        "ceiling": 579
+      }
+    ],
+    "evTableShort": []
+  },
+  {
+    "name": "回胴黙示録カイジ 狂宴",
+    "ceiling": 950,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -2757
+      },
+      {
+        "g": 50,
+        "ev56": -2587
+      },
+      {
+        "g": 100,
+        "ev56": -2395
+      },
+      {
+        "g": 150,
+        "ev56": -2180
+      },
+      {
+        "g": 200,
+        "ev56": -1938
+      },
+      {
+        "g": 250,
+        "ev56": -1665
+      },
+      {
+        "g": 300,
+        "ev56": -1359
+      },
+      {
+        "g": 350,
+        "ev56": -1014
+      },
+      {
+        "g": 400,
+        "ev56": -626
+      },
+      {
+        "g": 450,
+        "ev56": -189
+      },
+      {
+        "g": 500,
+        "ev56": 302
+      },
+      {
+        "g": 550,
+        "ev56": 854
+      },
+      {
+        "g": 600,
+        "ev56": 1475
+      },
+      {
+        "g": 650,
+        "ev56": 2174
+      },
+      {
+        "g": 700,
+        "ev56": 2960
+      },
+      {
+        "g": 750,
+        "ev56": 3844
+      },
+      {
+        "g": 800,
+        "ev56": 4839
+      },
+      {
+        "g": 850,
+        "ev56": 5958
+      },
+      {
+        "g": 900,
+        "ev56": 7217
+      },
+      {
+        "g": 950,
+        "ev56": 8633
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "スロット ソードアート・オンライン",
+    "ceiling": 950,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1492
+      },
+      {
+        "g": 50,
+        "ev56": -1387
+      },
+      {
+        "g": 100,
+        "ev56": -1267
+      },
+      {
+        "g": 150,
+        "ev56": -1130
+      },
+      {
+        "g": 200,
+        "ev56": -974
+      },
+      {
+        "g": 250,
+        "ev56": -795
+      },
+      {
+        "g": 300,
+        "ev56": -590
+      },
+      {
+        "g": 350,
+        "ev56": -356
+      },
+      {
+        "g": 400,
+        "ev56": -88
+      },
+      {
+        "g": 450,
+        "ev56": 218
+      },
+      {
+        "g": 500,
+        "ev56": 568
+      },
+      {
+        "g": 550,
+        "ev56": 968
+      },
+      {
+        "g": 600,
+        "ev56": 1426
+      },
+      {
+        "g": 650,
+        "ev56": 1950
+      },
+      {
+        "g": 700,
+        "ev56": 2548
+      },
+      {
+        "g": 750,
+        "ev56": 3233
+      },
+      {
+        "g": 950,
+        "ev56": 7105
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "マジカルハロウィン ボーナストリガー",
+    "ceiling": null,
+    "evTable": [],
+    "status": "no_ceiling",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "L ToLOVEるダークネス",
+    "ceiling": 1000,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -2389
+      },
+      {
+        "g": 50,
+        "ev56": -2255
+      },
+      {
+        "g": 100,
+        "ev56": -2101
+      },
+      {
+        "g": 150,
+        "ev56": -1926
+      },
+      {
+        "g": 200,
+        "ev56": -1725
+      },
+      {
+        "g": 250,
+        "ev56": -1497
+      },
+      {
+        "g": 300,
+        "ev56": -1236
+      },
+      {
+        "g": 350,
+        "ev56": -939
+      },
+      {
+        "g": 400,
+        "ev56": -599
+      },
+      {
+        "g": 450,
+        "ev56": -212
+      },
+      {
+        "g": 500,
+        "ev56": 230
+      },
+      {
+        "g": 550,
+        "ev56": 735
+      },
+      {
+        "g": 600,
+        "ev56": 1311
+      },
+      {
+        "g": 650,
+        "ev56": 1968
+      },
+      {
+        "g": 700,
+        "ev56": 2717
+      },
+      {
+        "g": 750,
+        "ev56": 3573
+      },
+      {
+        "g": 800,
+        "ev56": 4550
+      },
+      {
+        "g": 850,
+        "ev56": 5664
+      },
+      {
+        "g": 900,
+        "ev56": 6936
+      },
+      {
+        "g": 950,
+        "ev56": 8387
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [
+      {
+        "label": "設定変更時",
+        "ceiling": 650,
+        "evTableShort": [
+          {
+            "g": 0,
+            "ev56": -1833
+          },
+          {
+            "g": 50,
+            "ev56": -1467
+          },
+          {
+            "g": 100,
+            "ev56": -1049
+          },
+          {
+            "g": 150,
+            "ev56": -573
+          },
+          {
+            "g": 200,
+            "ev56": -29
+          },
+          {
+            "g": 250,
+            "ev56": 592
+          },
+          {
+            "g": 300,
+            "ev56": 1301
+          },
+          {
+            "g": 350,
+            "ev56": 2109
+          },
+          {
+            "g": 400,
+            "ev56": 3032
+          },
+          {
+            "g": 450,
+            "ev56": 4085
+          },
+          {
+            "g": 500,
+            "ev56": 5286
+          },
+          {
+            "g": 550,
+            "ev56": 6657
+          },
+          {
+            "g": 600,
+            "ev56": 8222
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "スマスロ頭文字D 2nd",
+    "ceiling": 550,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1562
+      },
+      {
+        "g": 50,
+        "ev56": -1415
+      },
+      {
+        "g": 100,
+        "ev56": -1232
+      },
+      {
+        "g": 150,
+        "ev56": -1006
+      },
+      {
+        "g": 200,
+        "ev56": -727
+      },
+      {
+        "g": 250,
+        "ev56": -381
+      },
+      {
+        "g": 300,
+        "ev56": 48
+      },
+      {
+        "g": 350,
+        "ev56": 578
+      },
+      {
+        "g": 400,
+        "ev56": 1235
+      },
+      {
+        "g": 450,
+        "ev56": 2047
+      },
+      {
+        "g": 500,
+        "ev56": 3054
+      },
+      {
+        "g": 550,
+        "ev56": 4299
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [
+      {
+        "label": "設定変更時",
+        "ceiling": 299
+      }
+    ],
+    "evTableShort": []
+  },
+  {
+    "name": "L聖闘士星矢 海皇覚醒 CUSTOM EDITION",
+    "ceiling": 950,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1709
+      },
+      {
+        "g": 50,
+        "ev56": -1602
+      },
+      {
+        "g": 100,
+        "ev56": -1481
+      },
+      {
+        "g": 150,
+        "ev56": -1343
+      },
+      {
+        "g": 200,
+        "ev56": -1187
+      },
+      {
+        "g": 250,
+        "ev56": -1009
+      },
+      {
+        "g": 300,
+        "ev56": -806
+      },
+      {
+        "g": 350,
+        "ev56": -576
+      },
+      {
+        "g": 400,
+        "ev56": -315
+      },
+      {
+        "g": 450,
+        "ev56": -18
+      },
+      {
+        "g": 500,
+        "ev56": 320
+      },
+      {
+        "g": 550,
+        "ev56": 704
+      },
+      {
+        "g": 600,
+        "ev56": 1141
+      },
+      {
+        "g": 650,
+        "ev56": 1637
+      },
+      {
+        "g": 700,
+        "ev56": 2201
+      },
+      {
+        "g": 750,
+        "ev56": 2842
+      },
+      {
+        "g": 800,
+        "ev56": 3571
+      },
+      {
+        "g": 850,
+        "ev56": 4400
+      },
+      {
+        "g": 900,
+        "ev56": 5342
+      },
+      {
+        "g": 950,
+        "ev56": 6413
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "スマスロ シャーマンキング",
+    "ceiling": 750,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -2026
+      },
+      {
+        "g": 50,
+        "ev56": -1892
+      },
+      {
+        "g": 100,
+        "ev56": -1734
+      },
+      {
+        "g": 150,
+        "ev56": -1549
+      },
+      {
+        "g": 200,
+        "ev56": -1332
+      },
+      {
+        "g": 250,
+        "ev56": -1077
+      },
+      {
+        "g": 300,
+        "ev56": -777
+      },
+      {
+        "g": 350,
+        "ev56": -425
+      },
+      {
+        "g": 400,
+        "ev56": -12
+      },
+      {
+        "g": 450,
+        "ev56": 473
+      },
+      {
+        "g": 500,
+        "ev56": 1042
+      },
+      {
+        "g": 550,
+        "ev56": 1711
+      },
+      {
+        "g": 600,
+        "ev56": 2496
+      },
+      {
+        "g": 650,
+        "ev56": 3418
+      },
+      {
+        "g": 700,
+        "ev56": 4501
+      },
+      {
+        "g": 750,
+        "ev56": 5772
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [
+      {
+        "label": "設定変更時",
+        "ceiling": 500
+      }
+    ],
+    "evTableShort": []
+  },
+  {
+    "name": "LBパチスロ ヱヴァンゲリヲン ～約束の扉～",
+    "ceiling": null,
+    "evTable": [],
+    "status": "no_table",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "Lルパン三世 大航海者の秘宝",
+    "ceiling": 950,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -2702
+      },
+      {
+        "g": 50,
+        "ev56": -2547
+      },
+      {
+        "g": 100,
+        "ev56": -2372
+      },
+      {
+        "g": 150,
+        "ev56": -2174
+      },
+      {
+        "g": 200,
+        "ev56": -1950
+      },
+      {
+        "g": 250,
+        "ev56": -1696
+      },
+      {
+        "g": 300,
+        "ev56": -1409
+      },
+      {
+        "g": 350,
+        "ev56": -1085
+      },
+      {
+        "g": 400,
+        "ev56": -718
+      },
+      {
+        "g": 450,
+        "ev56": -303
+      },
+      {
+        "g": 500,
+        "ev56": 167
+      },
+      {
+        "g": 550,
+        "ev56": 699
+      },
+      {
+        "g": 600,
+        "ev56": 1300
+      },
+      {
+        "g": 650,
+        "ev56": 1980
+      },
+      {
+        "g": 700,
+        "ev56": 2750
+      },
+      {
+        "g": 750,
+        "ev56": 3620
+      },
+      {
+        "g": 800,
+        "ev56": 4605
+      },
+      {
+        "g": 850,
+        "ev56": 5719
+      },
+      {
+        "g": 900,
+        "ev56": 6979
+      },
+      {
+        "g": 950,
+        "ev56": 8405
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [
+      {
+        "label": "設定変更時",
+        "ceiling": 700
+      }
+    ],
+    "evTableShort": []
+  },
+  {
+    "name": "スロット Re：ゼロから始める異世界生活 season2",
+    "ceiling": 900,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -3577
+      },
+      {
+        "g": 50,
+        "ev56": -3338
+      },
+      {
+        "g": 100,
+        "ev56": -3072
+      },
+      {
+        "g": 150,
+        "ev56": -2778
+      },
+      {
+        "g": 200,
+        "ev56": -2453
+      },
+      {
+        "g": 250,
+        "ev56": -2093
+      },
+      {
+        "g": 300,
+        "ev56": -1694
+      },
+      {
+        "g": 350,
+        "ev56": -1252
+      },
+      {
+        "g": 400,
+        "ev56": -762
+      },
+      {
+        "g": 450,
+        "ev56": -221
+      },
+      {
+        "g": 500,
+        "ev56": 379
+      },
+      {
+        "g": 550,
+        "ev56": 1044
+      },
+      {
+        "g": 600,
+        "ev56": 1779
+      },
+      {
+        "g": 650,
+        "ev56": 2594
+      },
+      {
+        "g": 700,
+        "ev56": 3496
+      },
+      {
+        "g": 750,
+        "ev56": 4495
+      },
+      {
+        "g": 800,
+        "ev56": 5601
+      },
+      {
+        "g": 850,
+        "ev56": 6826
+      },
+      {
+        "g": 900,
+        "ev56": 8182
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "LBジャックポット",
+    "ceiling": null,
+    "evTable": [],
+    "status": "no_table",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "L咲-Saki-頂上決戦",
+    "ceiling": 950,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -3108
+      },
+      {
+        "g": 50,
+        "ev56": -2934
+      },
+      {
+        "g": 100,
+        "ev56": -2739
+      },
+      {
+        "g": 150,
+        "ev56": -2520
+      },
+      {
+        "g": 200,
+        "ev56": -2276
+      },
+      {
+        "g": 250,
+        "ev56": -2002
+      },
+      {
+        "g": 300,
+        "ev56": -1696
+      },
+      {
+        "g": 350,
+        "ev56": -1354
+      },
+      {
+        "g": 400,
+        "ev56": -971
+      },
+      {
+        "g": 450,
+        "ev56": -543
+      },
+      {
+        "g": 500,
+        "ev56": -63
+      },
+      {
+        "g": 550,
+        "ev56": 473
+      },
+      {
+        "g": 600,
+        "ev56": 1074
+      },
+      {
+        "g": 650,
+        "ev56": 1746
+      },
+      {
+        "g": 700,
+        "ev56": 2497
+      },
+      {
+        "g": 750,
+        "ev56": 3338
+      },
+      {
+        "g": 800,
+        "ev56": 4279
+      },
+      {
+        "g": 850,
+        "ev56": 5332
+      },
+      {
+        "g": 900,
+        "ev56": 6510
+      },
+      {
+        "g": 950,
+        "ev56": 7828
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "L麻雀物語",
+    "ceiling": 950,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -2348
+      },
+      {
+        "g": 50,
+        "ev56": -2220
+      },
+      {
+        "g": 100,
+        "ev56": -2073
+      },
+      {
+        "g": 150,
+        "ev56": -1905
+      },
+      {
+        "g": 200,
+        "ev56": -1715
+      },
+      {
+        "g": 250,
+        "ev56": -1497
+      },
+      {
+        "g": 300,
+        "ev56": -1249
+      },
+      {
+        "g": 350,
+        "ev56": -966
+      },
+      {
+        "g": 400,
+        "ev56": -644
+      },
+      {
+        "g": 450,
+        "ev56": -276
+      },
+      {
+        "g": 500,
+        "ev56": 143
+      },
+      {
+        "g": 550,
+        "ev56": 620
+      },
+      {
+        "g": 600,
+        "ev56": 1165
+      },
+      {
+        "g": 650,
+        "ev56": 1786
+      },
+      {
+        "g": 700,
+        "ev56": 2493
+      },
+      {
+        "g": 750,
+        "ev56": 3300
+      },
+      {
+        "g": 800,
+        "ev56": 4220
+      },
+      {
+        "g": 850,
+        "ev56": 5269
+      },
+      {
+        "g": 900,
+        "ev56": 6465
+      },
+      {
+        "g": 950,
+        "ev56": 7828
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [
+      {
+        "label": "設定変更時",
+        "ceiling": 200
+      },
+      {
+        "label": "設定変更時",
+        "ceiling": 399
+      }
+    ],
+    "evTableShort": []
+  },
+  {
+    "name": "パチスロ 転生したら剣でした",
+    "ceiling": 950,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -3092
+      },
+      {
+        "g": 50,
+        "ev56": -2883
+      },
+      {
+        "g": 100,
+        "ev56": -2650
+      },
+      {
+        "g": 150,
+        "ev56": -2391
+      },
+      {
+        "g": 200,
+        "ev56": -2102
+      },
+      {
+        "g": 250,
+        "ev56": -1779
+      },
+      {
+        "g": 300,
+        "ev56": -1419
+      },
+      {
+        "g": 350,
+        "ev56": -1018
+      },
+      {
+        "g": 400,
+        "ev56": -571
+      },
+      {
+        "g": 450,
+        "ev56": -72
+      },
+      {
+        "g": 500,
+        "ev56": 485
+      },
+      {
+        "g": 550,
+        "ev56": 1105
+      },
+      {
+        "g": 600,
+        "ev56": 1797
+      },
+      {
+        "g": 650,
+        "ev56": 2569
+      },
+      {
+        "g": 700,
+        "ev56": 3429
+      },
+      {
+        "g": 750,
+        "ev56": 4389
+      },
+      {
+        "g": 800,
+        "ev56": 5459
+      },
+      {
+        "g": 850,
+        "ev56": 6652
+      },
+      {
+        "g": 900,
+        "ev56": 7983
+      },
+      {
+        "g": 950,
+        "ev56": 9467
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [
+      {
+        "label": "設定変更時",
+        "ceiling": 980
+      }
+    ],
+    "evTableShort": []
+  },
+  {
+    "name": "わたしの幸せな結婚",
+    "ceiling": 750,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1931
+      },
+      {
+        "g": 50,
+        "ev56": -1804
+      },
+      {
+        "g": 100,
+        "ev56": -1655
+      },
+      {
+        "g": 150,
+        "ev56": -1481
+      },
+      {
+        "g": 200,
+        "ev56": -1276
+      },
+      {
+        "g": 250,
+        "ev56": -1037
+      },
+      {
+        "g": 300,
+        "ev56": -756
+      },
+      {
+        "g": 350,
+        "ev56": -428
+      },
+      {
+        "g": 400,
+        "ev56": -42
+      },
+      {
+        "g": 450,
+        "ev56": 409
+      },
+      {
+        "g": 500,
+        "ev56": 938
+      },
+      {
+        "g": 550,
+        "ev56": 1558
+      },
+      {
+        "g": 600,
+        "ev56": 2285
+      },
+      {
+        "g": 650,
+        "ev56": 3136
+      },
+      {
+        "g": 700,
+        "ev56": 4134
+      },
+      {
+        "g": 750,
+        "ev56": 5303
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "マジカルハロウィン8",
+    "ceiling": 700,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -912
+      },
+      {
+        "g": 50,
+        "ev56": -890
+      },
+      {
+        "g": 100,
+        "ev56": -861
+      },
+      {
+        "g": 150,
+        "ev56": -822
+      },
+      {
+        "g": 200,
+        "ev56": -771
+      },
+      {
+        "g": 250,
+        "ev56": -704
+      },
+      {
+        "g": 300,
+        "ev56": -615
+      },
+      {
+        "g": 350,
+        "ev56": -497
+      },
+      {
+        "g": 400,
+        "ev56": -341
+      },
+      {
+        "g": 450,
+        "ev56": -136
+      },
+      {
+        "g": 500,
+        "ev56": 136
+      },
+      {
+        "g": 550,
+        "ev56": 494
+      },
+      {
+        "g": 600,
+        "ev56": 969
+      },
+      {
+        "g": 650,
+        "ev56": 1595
+      },
+      {
+        "g": 700,
+        "ev56": 2422
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [
+      {
+        "label": "設定変更時",
+        "ceiling": 600
+      }
+    ],
+    "evTableShort": []
+  },
+  {
+    "name": "パチスロハイパーラッシュ",
+    "ceiling": null,
+    "evTable": [],
+    "status": "no_ceiling",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "バーニングエクスプレス",
+    "ceiling": 950,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -933
+      },
+      {
+        "g": 50,
+        "ev56": -920
+      },
+      {
+        "g": 100,
+        "ev56": -905
+      },
+      {
+        "g": 150,
+        "ev56": -884
+      },
+      {
+        "g": 200,
+        "ev56": -858
+      },
+      {
+        "g": 250,
+        "ev56": -825
+      },
+      {
+        "g": 300,
+        "ev56": -782
+      },
+      {
+        "g": 350,
+        "ev56": -727
+      },
+      {
+        "g": 400,
+        "ev56": -656
+      },
+      {
+        "g": 450,
+        "ev56": -564
+      },
+      {
+        "g": 500,
+        "ev56": -447
+      },
+      {
+        "g": 550,
+        "ev56": -297
+      },
+      {
+        "g": 600,
+        "ev56": -103
+      },
+      {
+        "g": 650,
+        "ev56": 145
+      },
+      {
+        "g": 700,
+        "ev56": 465
+      },
+      {
+        "g": 750,
+        "ev56": 875
+      },
+      {
+        "g": 800,
+        "ev56": 1402
+      },
+      {
+        "g": 850,
+        "ev56": 2080
+      },
+      {
+        "g": 900,
+        "ev56": 2950
+      },
+      {
+        "g": 950,
+        "ev56": 4069
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "パチスロこの素晴らしい世界に祝福を！",
+    "ceiling": null,
+    "evTable": [],
+    "status": "no_ceiling",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "L不二子BT",
+    "ceiling": null,
+    "evTable": [],
+    "status": "no_ceiling",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "プリズムナナ",
+    "ceiling": 850,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -2720
+      },
+      {
+        "g": 50,
+        "ev56": -2549
+      },
+      {
+        "g": 100,
+        "ev56": -2355
+      },
+      {
+        "g": 150,
+        "ev56": -2135
+      },
+      {
+        "g": 200,
+        "ev56": -1884
+      },
+      {
+        "g": 250,
+        "ev56": -1600
+      },
+      {
+        "g": 300,
+        "ev56": -1276
+      },
+      {
+        "g": 350,
+        "ev56": -908
+      },
+      {
+        "g": 400,
+        "ev56": -490
+      },
+      {
+        "g": 450,
+        "ev56": -14
+      },
+      {
+        "g": 500,
+        "ev56": 526
+      },
+      {
+        "g": 550,
+        "ev56": 1140
+      },
+      {
+        "g": 600,
+        "ev56": 1838
+      },
+      {
+        "g": 650,
+        "ev56": 2632
+      },
+      {
+        "g": 700,
+        "ev56": 3534
+      },
+      {
+        "g": 750,
+        "ev56": 4560
+      },
+      {
+        "g": 800,
+        "ev56": 5725
+      },
+      {
+        "g": 850,
+        "ev56": 7050
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [
+      {
+        "label": "リセット後",
+        "ceiling": 250
+      }
+    ],
+    "evTableShort": []
+  },
+  {
+    "name": "パチスロひぐらしのなく頃に祭2",
+    "ceiling": null,
+    "evTable": [],
+    "status": "no_ceiling",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "パチスロ 戦国†恋姫",
+    "ceiling": 850,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -702
+      },
+      {
+        "g": 50,
+        "ev56": -695
+      },
+      {
+        "g": 100,
+        "ev56": -686
+      },
+      {
+        "g": 150,
+        "ev56": -674
+      },
+      {
+        "g": 200,
+        "ev56": -657
+      },
+      {
+        "g": 250,
+        "ev56": -633
+      },
+      {
+        "g": 300,
+        "ev56": -602
+      },
+      {
+        "g": 350,
+        "ev56": -559
+      },
+      {
+        "g": 400,
+        "ev56": -500
+      },
+      {
+        "g": 450,
+        "ev56": -420
+      },
+      {
+        "g": 500,
+        "ev56": -311
+      },
+      {
+        "g": 550,
+        "ev56": -162
+      },
+      {
+        "g": 600,
+        "ev56": 40
+      },
+      {
+        "g": 650,
+        "ev56": 316
+      },
+      {
+        "g": 700,
+        "ev56": 693
+      },
+      {
+        "g": 750,
+        "ev56": 1206
+      },
+      {
+        "g": 800,
+        "ev56": 1905
+      },
+      {
+        "g": 850,
+        "ev56": 2858
+      },
+      {
+        "g": 800,
+        "ev56": 1905
+      },
+      {
+        "g": 850,
+        "ev56": 2858
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "パチスロ 魔法少女育成計画",
+    "ceiling": null,
+    "evTable": [],
+    "status": "no_ceiling",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "LBスロットGALFY",
+    "ceiling": null,
+    "evTable": [],
+    "status": "no_ceiling",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "パチスロ アラジンAクラシック",
+    "ceiling": 1150,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1483
+      },
+      {
+        "g": 50,
+        "ev56": -1449
+      },
+      {
+        "g": 100,
+        "ev56": -1408
+      },
+      {
+        "g": 150,
+        "ev56": -1358
+      },
+      {
+        "g": 200,
+        "ev56": -1299
+      },
+      {
+        "g": 250,
+        "ev56": -1229
+      },
+      {
+        "g": 300,
+        "ev56": -1144
+      },
+      {
+        "g": 350,
+        "ev56": -1043
+      },
+      {
+        "g": 400,
+        "ev56": -922
+      },
+      {
+        "g": 450,
+        "ev56": -777
+      },
+      {
+        "g": 500,
+        "ev56": -603
+      },
+      {
+        "g": 550,
+        "ev56": -396
+      },
+      {
+        "g": 600,
+        "ev56": -148
+      },
+      {
+        "g": 650,
+        "ev56": 149
+      },
+      {
+        "g": 700,
+        "ev56": 505
+      },
+      {
+        "g": 750,
+        "ev56": 930
+      },
+      {
+        "g": 800,
+        "ev56": 1440
+      },
+      {
+        "g": 850,
+        "ev56": 2049
+      },
+      {
+        "g": 900,
+        "ev56": 2778
+      },
+      {
+        "g": 950,
+        "ev56": 3650
+      },
+      {
+        "g": 1000,
+        "ev56": 4694
+      },
+      {
+        "g": 1050,
+        "ev56": 5943
+      },
+      {
+        "g": 1100,
+        "ev56": 7437
+      },
+      {
+        "g": 1150,
+        "ev56": 9225
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "パチスロ 緋弾のアリアⅡ",
+    "ceiling": 1000,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -2123
+      },
+      {
+        "g": 50,
+        "ev56": -1987
+      },
+      {
+        "g": 100,
+        "ev56": -1836
+      },
+      {
+        "g": 150,
+        "ev56": -1668
+      },
+      {
+        "g": 200,
+        "ev56": -1483
+      },
+      {
+        "g": 250,
+        "ev56": -1277
+      },
+      {
+        "g": 300,
+        "ev56": -1049
+      },
+      {
+        "g": 350,
+        "ev56": -796
+      },
+      {
+        "g": 400,
+        "ev56": -515
+      },
+      {
+        "g": 450,
+        "ev56": -205
+      },
+      {
+        "g": 500,
+        "ev56": 140
+      },
+      {
+        "g": 550,
+        "ev56": 521
+      },
+      {
+        "g": 600,
+        "ev56": 944
+      },
+      {
+        "g": 650,
+        "ev56": 1413
+      },
+      {
+        "g": 700,
+        "ev56": 1933
+      },
+      {
+        "g": 750,
+        "ev56": 2509
+      },
+      {
+        "g": 800,
+        "ev56": 3148
+      },
+      {
+        "g": 1000,
+        "ev56": 6473
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "スーパーリオエース",
+    "ceiling": 550,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1058
+      },
+      {
+        "g": 50,
+        "ev56": -903
+      },
+      {
+        "g": 100,
+        "ev56": -716
+      },
+      {
+        "g": 150,
+        "ev56": -493
+      },
+      {
+        "g": 200,
+        "ev56": -224
+      },
+      {
+        "g": 250,
+        "ev56": 98
+      },
+      {
+        "g": 300,
+        "ev56": 484
+      },
+      {
+        "g": 350,
+        "ev56": 948
+      },
+      {
+        "g": 400,
+        "ev56": 1504
+      },
+      {
+        "g": 450,
+        "ev56": 2171
+      },
+      {
+        "g": 500,
+        "ev56": 2972
+      },
+      {
+        "g": 550,
+        "ev56": 3933
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "パチスロ マクロスデルタ",
+    "ceiling": null,
+    "evTable": [],
+    "status": "no_ceiling",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "SLOTマッピー",
+    "ceiling": null,
+    "evTable": [],
+    "status": "no_ceiling",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "パチスロコードギアス 反逆のルルーシュ3",
+    "ceiling": 450,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -907
+      },
+      {
+        "g": 50,
+        "ev56": -783
+      },
+      {
+        "g": 100,
+        "ev56": -624
+      },
+      {
+        "g": 150,
+        "ev56": -418
+      },
+      {
+        "g": 200,
+        "ev56": -152
+      },
+      {
+        "g": 250,
+        "ev56": 191
+      },
+      {
+        "g": 300,
+        "ev56": 632
+      },
+      {
+        "g": 350,
+        "ev56": 1202
+      },
+      {
+        "g": 400,
+        "ev56": 1937
+      },
+      {
+        "g": 450,
+        "ev56": 2885
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "Lパチスロ ありふれた職業で世界最強",
+    "ceiling": 950,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -2957
+      },
+      {
+        "g": 50,
+        "ev56": -2794
+      },
+      {
+        "g": 100,
+        "ev56": -2610
+      },
+      {
+        "g": 150,
+        "ev56": -2404
+      },
+      {
+        "g": 200,
+        "ev56": -2174
+      },
+      {
+        "g": 250,
+        "ev56": -1915
+      },
+      {
+        "g": 300,
+        "ev56": -1626
+      },
+      {
+        "g": 350,
+        "ev56": -1302
+      },
+      {
+        "g": 400,
+        "ev56": -939
+      },
+      {
+        "g": 450,
+        "ev56": -532
+      },
+      {
+        "g": 500,
+        "ev56": -76
+      },
+      {
+        "g": 550,
+        "ev56": 435
+      },
+      {
+        "g": 600,
+        "ev56": 1007
+      },
+      {
+        "g": 650,
+        "ev56": 1648
+      },
+      {
+        "g": 700,
+        "ev56": 2367
+      },
+      {
+        "g": 750,
+        "ev56": 3171
+      },
+      {
+        "g": 800,
+        "ev56": 4073
+      },
+      {
+        "g": 850,
+        "ev56": 5083
+      },
+      {
+        "g": 900,
+        "ev56": 6215
+      },
+      {
+        "g": 950,
+        "ev56": 7484
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "スマスロ ようこそ実力至上主義の教室へ",
+    "ceiling": 980,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -2124
+      },
+      {
+        "g": 50,
+        "ev56": -2022
+      },
+      {
+        "g": 100,
+        "ev56": -1904
+      },
+      {
+        "g": 150,
+        "ev56": -1769
+      },
+      {
+        "g": 200,
+        "ev56": -1612
+      },
+      {
+        "g": 250,
+        "ev56": -1432
+      },
+      {
+        "g": 300,
+        "ev56": -1225
+      },
+      {
+        "g": 350,
+        "ev56": -985
+      },
+      {
+        "g": 400,
+        "ev56": -709
+      },
+      {
+        "g": 450,
+        "ev56": -390
+      },
+      {
+        "g": 500,
+        "ev56": -23
+      },
+      {
+        "g": 550,
+        "ev56": 401
+      },
+      {
+        "g": 600,
+        "ev56": 889
+      },
+      {
+        "g": 650,
+        "ev56": 1452
+      },
+      {
+        "g": 700,
+        "ev56": 2102
+      },
+      {
+        "g": 750,
+        "ev56": 2851
+      },
+      {
+        "g": 800,
+        "ev56": 3714
+      },
+      {
+        "g": 850,
+        "ev56": 4710
+      },
+      {
+        "g": 900,
+        "ev56": 5858
+      },
+      {
+        "g": 950,
+        "ev56": 7182
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [
+      {
+        "label": "設定変更時",
+        "ceiling": 630
+      },
+      {
+        "label": "CZ7スルー後（次CZでAT確定）",
+        "ceiling": null
+      }
+    ],
+    "evTableShort": [
+      {
+        "g": 0,
+        "ev56": -1691
+      },
+      {
+        "g": 50,
+        "ev56": -1393
+      },
+      {
+        "g": 100,
+        "ev56": -1050
+      },
+      {
+        "g": 150,
+        "ev56": -654
+      },
+      {
+        "g": 200,
+        "ev56": -197
+      },
+      {
+        "g": 250,
+        "ev56": 329
+      },
+      {
+        "g": 300,
+        "ev56": 936
+      },
+      {
+        "g": 350,
+        "ev56": 1636
+      },
+      {
+        "g": 400,
+        "ev56": 2444
+      },
+      {
+        "g": 450,
+        "ev56": 3375
+      },
+      {
+        "g": 500,
+        "ev56": 4448
+      },
+      {
+        "g": 550,
+        "ev56": 5686
+      },
+      {
+        "g": 600,
+        "ev56": 7113
+      }
+    ],
+    "cz_ceiling": 500
+  },
+  {
+    "name": "スマスロ アイドルマスター ミリオンライブ！ ネクストプロローグ",
+    "ceiling": 750,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -2884
+      },
+      {
+        "g": 50,
+        "ev56": -2644
+      },
+      {
+        "g": 100,
+        "ev56": -2372
+      },
+      {
+        "g": 150,
+        "ev56": -2065
+      },
+      {
+        "g": 200,
+        "ev56": -1716
+      },
+      {
+        "g": 250,
+        "ev56": -1322
+      },
+      {
+        "g": 300,
+        "ev56": -875
+      },
+      {
+        "g": 350,
+        "ev56": -368
+      },
+      {
+        "g": 400,
+        "ev56": 205
+      },
+      {
+        "g": 450,
+        "ev56": 855
+      },
+      {
+        "g": 500,
+        "ev56": 1591
+      },
+      {
+        "g": 550,
+        "ev56": 2425
+      },
+      {
+        "g": 600,
+        "ev56": 3369
+      },
+      {
+        "g": 650,
+        "ev56": 4439
+      },
+      {
+        "g": 700,
+        "ev56": 5650
+      },
+      {
+        "g": 750,
+        "ev56": 7023
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "Lにゃんこ大戦争 超神速",
+    "ceiling": 1100,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -2499
+      },
+      {
+        "g": 50,
+        "ev56": -2386
+      },
+      {
+        "g": 100,
+        "ev56": -2259
+      },
+      {
+        "g": 150,
+        "ev56": -2116
+      },
+      {
+        "g": 200,
+        "ev56": -1955
+      },
+      {
+        "g": 250,
+        "ev56": -1773
+      },
+      {
+        "g": 300,
+        "ev56": -1569
+      },
+      {
+        "g": 350,
+        "ev56": -1339
+      },
+      {
+        "g": 400,
+        "ev56": -1081
+      },
+      {
+        "g": 450,
+        "ev56": -790
+      },
+      {
+        "g": 500,
+        "ev56": -462
+      },
+      {
+        "g": 550,
+        "ev56": -93
+      },
+      {
+        "g": 600,
+        "ev56": 323
+      },
+      {
+        "g": 650,
+        "ev56": 790
+      },
+      {
+        "g": 700,
+        "ev56": 1317
+      },
+      {
+        "g": 750,
+        "ev56": 1909
+      },
+      {
+        "g": 800,
+        "ev56": 2576
+      },
+      {
+        "g": 850,
+        "ev56": 3327
+      },
+      {
+        "g": 900,
+        "ev56": 4172
+      },
+      {
+        "g": 950,
+        "ev56": 5124
+      },
+      {
+        "g": 1000,
+        "ev56": 6195
+      },
+      {
+        "g": 1050,
+        "ev56": 7401
+      },
+      {
+        "g": 1100,
+        "ev56": 8758
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [
+      {
+        "label": "設定変更時",
+        "ceiling": 922
+      }
+    ],
+    "evTableShort": []
+  },
+  {
+    "name": "スマスロ 聖戦士ダンバイン",
+    "ceiling": 750,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -3219
+      },
+      {
+        "g": 50,
+        "ev56": -2953
+      },
+      {
+        "g": 100,
+        "ev56": -2655
+      },
+      {
+        "g": 150,
+        "ev56": -2318
+      },
+      {
+        "g": 200,
+        "ev56": -1939
+      },
+      {
+        "g": 250,
+        "ev56": -1513
+      },
+      {
+        "g": 300,
+        "ev56": -1033
+      },
+      {
+        "g": 350,
+        "ev56": -492
+      },
+      {
+        "g": 400,
+        "ev56": 116
+      },
+      {
+        "g": 450,
+        "ev56": 802
+      },
+      {
+        "g": 500,
+        "ev56": 1573
+      },
+      {
+        "g": 550,
+        "ev56": 2442
+      },
+      {
+        "g": 600,
+        "ev56": 3420
+      },
+      {
+        "g": 650,
+        "ev56": 4521
+      },
+      {
+        "g": 700,
+        "ev56": 5760
+      },
+      {
+        "g": 750,
+        "ev56": 7156
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "スマスロ 一方通行 とある魔術の禁書目録",
+    "ceiling": 950,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -2071
+      },
+      {
+        "g": 50,
+        "ev56": -1976
+      },
+      {
+        "g": 100,
+        "ev56": -1866
+      },
+      {
+        "g": 150,
+        "ev56": -1739
+      },
+      {
+        "g": 200,
+        "ev56": -1591
+      },
+      {
+        "g": 250,
+        "ev56": -1420
+      },
+      {
+        "g": 300,
+        "ev56": -1221
+      },
+      {
+        "g": 350,
+        "ev56": -991
+      },
+      {
+        "g": 400,
+        "ev56": -724
+      },
+      {
+        "g": 450,
+        "ev56": -414
+      },
+      {
+        "g": 500,
+        "ev56": -55
+      },
+      {
+        "g": 550,
+        "ev56": 362
+      },
+      {
+        "g": 600,
+        "ev56": 845
+      },
+      {
+        "g": 650,
+        "ev56": 1405
+      },
+      {
+        "g": 700,
+        "ev56": 2054
+      },
+      {
+        "g": 750,
+        "ev56": 2807
+      },
+      {
+        "g": 800,
+        "ev56": 3681
+      },
+      {
+        "g": 850,
+        "ev56": 4693
+      },
+      {
+        "g": 900,
+        "ev56": 5867
+      },
+      {
+        "g": 950,
+        "ev56": 7229
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [
+      {
+        "label": "設定変更時",
+        "ceiling": 100
+      }
+    ],
+    "evTableShort": []
+  },
+  {
+    "name": "L犬夜叉2",
+    "ceiling": 650,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1716
+      },
+      {
+        "g": 50,
+        "ev56": -1582
+      },
+      {
+        "g": 100,
+        "ev56": -1422
+      },
+      {
+        "g": 150,
+        "ev56": -1229
+      },
+      {
+        "g": 200,
+        "ev56": -997
+      },
+      {
+        "g": 250,
+        "ev56": -717
+      },
+      {
+        "g": 300,
+        "ev56": -381
+      },
+      {
+        "g": 350,
+        "ev56": 24
+      },
+      {
+        "g": 400,
+        "ev56": 511
+      },
+      {
+        "g": 450,
+        "ev56": 1097
+      },
+      {
+        "g": 500,
+        "ev56": 1803
+      },
+      {
+        "g": 550,
+        "ev56": 2651
+      },
+      {
+        "g": 600,
+        "ev56": 3673
+      },
+      {
+        "g": 650,
+        "ev56": 4902
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [
+      {
+        "label": "設定変更時",
+        "ceiling": 333
+      }
+    ],
+    "evTableShort": []
+  },
+  {
+    "name": "スロット ゾンビランドサガ",
+    "ceiling": null,
+    "evTable": [],
+    "status": "no_table",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "アオハル♪操 A-LIVE",
+    "ceiling": null,
+    "evTable": [],
+    "status": "no_table",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "Lパチスロ 戦姫絶唱シンフォギア 正義の歌",
+    "ceiling": 750,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1433
+      },
+      {
+        "g": 50,
+        "ev56": -1292
+      },
+      {
+        "g": 100,
+        "ev56": -1126
+      },
+      {
+        "g": 150,
+        "ev56": -933
+      },
+      {
+        "g": 200,
+        "ev56": -707
+      },
+      {
+        "g": 250,
+        "ev56": -443
+      },
+      {
+        "g": 300,
+        "ev56": -135
+      },
+      {
+        "g": 350,
+        "ev56": 225
+      },
+      {
+        "g": 400,
+        "ev56": 646
+      },
+      {
+        "g": 450,
+        "ev56": 1138
+      },
+      {
+        "g": 500,
+        "ev56": 1713
+      },
+      {
+        "g": 550,
+        "ev56": 2385
+      },
+      {
+        "g": 600,
+        "ev56": 3169
+      },
+      {
+        "g": 650,
+        "ev56": 4086
+      },
+      {
+        "g": 700,
+        "ev56": 5158
+      },
+      {
+        "g": 750,
+        "ev56": 6410
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [
+      {
+        "label": "設定変更時",
+        "ceiling": 498
+      }
+    ],
+    "evTableShort": []
+  },
+  {
+    "name": "Lパチスロガールズ&パンツァー 最終章",
+    "ceiling": null,
+    "evTable": [],
+    "status": "no_table",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "スマスロ ストライク・ザ・ブラッド",
+    "ceiling": 550,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -950
+      },
+      {
+        "g": 50,
+        "ev56": -859
+      },
+      {
+        "g": 100,
+        "ev56": -744
+      },
+      {
+        "g": 150,
+        "ev56": -597
+      },
+      {
+        "g": 200,
+        "ev56": -412
+      },
+      {
+        "g": 250,
+        "ev56": -178
+      },
+      {
+        "g": 300,
+        "ev56": 118
+      },
+      {
+        "g": 350,
+        "ev56": 494
+      },
+      {
+        "g": 400,
+        "ev56": 969
+      },
+      {
+        "g": 450,
+        "ev56": 1571
+      },
+      {
+        "g": 500,
+        "ev56": 2333
+      },
+      {
+        "g": 550,
+        "ev56": 3298
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "Lアカメが斬る！2",
+    "ceiling": null,
+    "evTable": [],
+    "status": "no_table",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "スマスロ コードギアス 反逆のルルーシュ／復活のルルーシュ",
+    "ceiling": 950,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -2438
+      },
+      {
+        "g": 50,
+        "ev56": -2231
+      },
+      {
+        "g": 100,
+        "ev56": -2003
+      },
+      {
+        "g": 150,
+        "ev56": -1751
+      },
+      {
+        "g": 200,
+        "ev56": -1473
+      },
+      {
+        "g": 250,
+        "ev56": -1167
+      },
+      {
+        "g": 300,
+        "ev56": -830
+      },
+      {
+        "g": 350,
+        "ev56": -458
+      },
+      {
+        "g": 400,
+        "ev56": -48
+      },
+      {
+        "g": 450,
+        "ev56": 405
+      },
+      {
+        "g": 500,
+        "ev56": 904
+      },
+      {
+        "g": 550,
+        "ev56": 1454
+      },
+      {
+        "g": 600,
+        "ev56": 2060
+      },
+      {
+        "g": 650,
+        "ev56": 2729
+      },
+      {
+        "g": 700,
+        "ev56": 3467
+      },
+      {
+        "g": 750,
+        "ev56": 4280
+      },
+      {
+        "g": 800,
+        "ev56": 5177
+      },
+      {
+        "g": 850,
+        "ev56": 6166
+      },
+      {
+        "g": 900,
+        "ev56": 7256
+      },
+      {
+        "g": 950,
+        "ev56": 8459
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "パチスロ盾の勇者の成り上がり",
+    "ceiling": 700,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1487
+      },
+      {
+        "g": 50,
+        "ev56": -1357
+      },
+      {
+        "g": 100,
+        "ev56": -1206
+      },
+      {
+        "g": 150,
+        "ev56": -1030
+      },
+      {
+        "g": 200,
+        "ev56": -824
+      },
+      {
+        "g": 250,
+        "ev56": -585
+      },
+      {
+        "g": 300,
+        "ev56": -305
+      },
+      {
+        "g": 350,
+        "ev56": 20
+      },
+      {
+        "g": 400,
+        "ev56": 399
+      },
+      {
+        "g": 450,
+        "ev56": 841
+      },
+      {
+        "g": 500,
+        "ev56": 1356
+      },
+      {
+        "g": 550,
+        "ev56": 1956
+      },
+      {
+        "g": 600,
+        "ev56": 2655
+      },
+      {
+        "g": 650,
+        "ev56": 3470
+      },
+      {
+        "g": 700,
+        "ev56": 4420
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "L ゴジラ対エヴァンゲリオン",
+    "ceiling": 950,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1449
+      },
+      {
+        "g": 50,
+        "ev56": -1382
+      },
+      {
+        "g": 100,
+        "ev56": -1304
+      },
+      {
+        "g": 150,
+        "ev56": -1212
+      },
+      {
+        "g": 200,
+        "ev56": -1104
+      },
+      {
+        "g": 250,
+        "ev56": -977
+      },
+      {
+        "g": 300,
+        "ev56": -828
+      },
+      {
+        "g": 350,
+        "ev56": -653
+      },
+      {
+        "g": 400,
+        "ev56": -448
+      },
+      {
+        "g": 450,
+        "ev56": -207
+      },
+      {
+        "g": 500,
+        "ev56": 75
+      },
+      {
+        "g": 550,
+        "ev56": 407
+      },
+      {
+        "g": 600,
+        "ev56": 796
+      },
+      {
+        "g": 650,
+        "ev56": 1253
+      },
+      {
+        "g": 700,
+        "ev56": 1789
+      },
+      {
+        "g": 750,
+        "ev56": 2419
+      },
+      {
+        "g": 800,
+        "ev56": 3157
+      },
+      {
+        "g": 850,
+        "ev56": 4024
+      },
+      {
+        "g": 900,
+        "ev56": 5042
+      },
+      {
+        "g": 950,
+        "ev56": 6237
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [
+      {
+        "label": "設定変更時",
+        "ceiling": 700
+      }
+    ],
+    "evTableShort": []
+  },
+  {
+    "name": "パチスロ「ダンジョンに出会いを求めるのは間違っているだろうか2」",
+    "ceiling": null,
+    "evTable": [],
+    "status": "no_table",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "スマスロ交響詩篇エウレカセブン4 HI-EVOLUTION",
+    "ceiling": 950,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1771
+      },
+      {
+        "g": 50,
+        "ev56": -1646
+      },
+      {
+        "g": 100,
+        "ev56": -1504
+      },
+      {
+        "g": 150,
+        "ev56": -1343
+      },
+      {
+        "g": 200,
+        "ev56": -1160
+      },
+      {
+        "g": 250,
+        "ev56": -953
+      },
+      {
+        "g": 300,
+        "ev56": -718
+      },
+      {
+        "g": 350,
+        "ev56": -452
+      },
+      {
+        "g": 400,
+        "ev56": -150
+      },
+      {
+        "g": 450,
+        "ev56": 192
+      },
+      {
+        "g": 500,
+        "ev56": 580
+      },
+      {
+        "g": 550,
+        "ev56": 1019
+      },
+      {
+        "g": 600,
+        "ev56": 1518
+      },
+      {
+        "g": 650,
+        "ev56": 2082
+      },
+      {
+        "g": 700,
+        "ev56": 2723
+      },
+      {
+        "g": 750,
+        "ev56": 3449
+      },
+      {
+        "g": 800,
+        "ev56": 4272
+      },
+      {
+        "g": 850,
+        "ev56": 5206
+      },
+      {
+        "g": 900,
+        "ev56": 6264
+      },
+      {
+        "g": 950,
+        "ev56": 7463
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "スロット 冴えない彼女の育てかた",
+    "ceiling": 850,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -968
+      },
+      {
+        "g": 50,
+        "ev56": -953
+      },
+      {
+        "g": 100,
+        "ev56": -935
+      },
+      {
+        "g": 150,
+        "ev56": -911
+      },
+      {
+        "g": 200,
+        "ev56": -880
+      },
+      {
+        "g": 250,
+        "ev56": -841
+      },
+      {
+        "g": 300,
+        "ev56": -790
+      },
+      {
+        "g": 350,
+        "ev56": -725
+      },
+      {
+        "g": 400,
+        "ev56": -640
+      },
+      {
+        "g": 450,
+        "ev56": -532
+      },
+      {
+        "g": 500,
+        "ev56": -393
+      },
+      {
+        "g": 550,
+        "ev56": -214
+      },
+      {
+        "g": 600,
+        "ev56": 16
+      },
+      {
+        "g": 650,
+        "ev56": 312
+      },
+      {
+        "g": 700,
+        "ev56": 693
+      },
+      {
+        "g": 750,
+        "ev56": 1183
+      },
+      {
+        "g": 800,
+        "ev56": 1813
+      },
+      {
+        "g": 850,
+        "ev56": 2624
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "スマスロ ゴールデンカムイ",
+    "ceiling": 700,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1395
+      },
+      {
+        "g": 50,
+        "ev56": -1226
+      },
+      {
+        "g": 100,
+        "ev56": -1032
+      },
+      {
+        "g": 150,
+        "ev56": -807
+      },
+      {
+        "g": 200,
+        "ev56": -547
+      },
+      {
+        "g": 250,
+        "ev56": -248
+      },
+      {
+        "g": 300,
+        "ev56": 98
+      },
+      {
+        "g": 350,
+        "ev56": 498
+      },
+      {
+        "g": 400,
+        "ev56": 959
+      },
+      {
+        "g": 450,
+        "ev56": 1491
+      },
+      {
+        "g": 500,
+        "ev56": 2105
+      },
+      {
+        "g": 550,
+        "ev56": 2815
+      },
+      {
+        "g": 600,
+        "ev56": 3634
+      },
+      {
+        "g": 650,
+        "ev56": 4580
+      },
+      {
+        "g": 700,
+        "ev56": 5672
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [
+      {
+        "label": "設定変更時",
+        "ceiling": 640
+      }
+    ],
+    "evTableShort": []
+  },
+  {
+    "name": "Sky Love",
+    "ceiling": 950,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -2997
+      },
+      {
+        "g": 50,
+        "ev56": -2711
+      },
+      {
+        "g": 100,
+        "ev56": -2401
+      },
+      {
+        "g": 150,
+        "ev56": -2065
+      },
+      {
+        "g": 200,
+        "ev56": -1702
+      },
+      {
+        "g": 250,
+        "ev56": -1310
+      },
+      {
+        "g": 300,
+        "ev56": -885
+      },
+      {
+        "g": 350,
+        "ev56": -425
+      },
+      {
+        "g": 400,
+        "ev56": 72
+      },
+      {
+        "g": 450,
+        "ev56": 610
+      },
+      {
+        "g": 500,
+        "ev56": 1193
+      },
+      {
+        "g": 550,
+        "ev56": 1822
+      },
+      {
+        "g": 600,
+        "ev56": 2504
+      },
+      {
+        "g": 650,
+        "ev56": 3241
+      },
+      {
+        "g": 700,
+        "ev56": 4039
+      },
+      {
+        "g": 750,
+        "ev56": 4902
+      },
+      {
+        "g": 800,
+        "ev56": 5836
+      },
+      {
+        "g": 850,
+        "ev56": 6846
+      },
+      {
+        "g": 900,
+        "ev56": 7939
+      },
+      {
+        "g": 950,
+        "ev56": 9122
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "パチスロ戦姫絶唱シンフォギア 勇気の歌",
+    "ceiling": 750,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1438
+      },
+      {
+        "g": 50,
+        "ev56": -1305
+      },
+      {
+        "g": 100,
+        "ev56": -1148
+      },
+      {
+        "g": 150,
+        "ev56": -963
+      },
+      {
+        "g": 200,
+        "ev56": -745
+      },
+      {
+        "g": 250,
+        "ev56": -489
+      },
+      {
+        "g": 300,
+        "ev56": -187
+      },
+      {
+        "g": 350,
+        "ev56": 167
+      },
+      {
+        "g": 400,
+        "ev56": 585
+      },
+      {
+        "g": 450,
+        "ev56": 1076
+      },
+      {
+        "g": 500,
+        "ev56": 1654
+      },
+      {
+        "g": 550,
+        "ev56": 2333
+      },
+      {
+        "g": 600,
+        "ev56": 3134
+      },
+      {
+        "g": 650,
+        "ev56": 4075
+      },
+      {
+        "g": 700,
+        "ev56": 5183
+      },
+      {
+        "g": 750,
+        "ev56": 6486
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "Lパチスロ マクロスフロンティア4",
+    "ceiling": 950,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1433
+      },
+      {
+        "g": 50,
+        "ev56": -1383
+      },
+      {
+        "g": 100,
+        "ev56": -1322
+      },
+      {
+        "g": 150,
+        "ev56": -1250
+      },
+      {
+        "g": 200,
+        "ev56": -1163
+      },
+      {
+        "g": 250,
+        "ev56": -1060
+      },
+      {
+        "g": 300,
+        "ev56": -938
+      },
+      {
+        "g": 350,
+        "ev56": -792
+      },
+      {
+        "g": 400,
+        "ev56": -618
+      },
+      {
+        "g": 450,
+        "ev56": -410
+      },
+      {
+        "g": 500,
+        "ev56": -162
+      },
+      {
+        "g": 550,
+        "ev56": 133
+      },
+      {
+        "g": 600,
+        "ev56": 485
+      },
+      {
+        "g": 650,
+        "ev56": 904
+      },
+      {
+        "g": 700,
+        "ev56": 1404
+      },
+      {
+        "g": 750,
+        "ev56": 2000
+      },
+      {
+        "g": 800,
+        "ev56": 2711
+      },
+      {
+        "g": 850,
+        "ev56": 3558
+      },
+      {
+        "g": 900,
+        "ev56": 4568
+      },
+      {
+        "g": 950,
+        "ev56": 5772
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "Lストライクウィッチーズ2",
+    "ceiling": 950,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -2157
+      },
+      {
+        "g": 50,
+        "ev56": -1959
+      },
+      {
+        "g": 100,
+        "ev56": -1740
+      },
+      {
+        "g": 150,
+        "ev56": -1498
+      },
+      {
+        "g": 200,
+        "ev56": -1232
+      },
+      {
+        "g": 250,
+        "ev56": -939
+      },
+      {
+        "g": 300,
+        "ev56": -616
+      },
+      {
+        "g": 350,
+        "ev56": -259
+      },
+      {
+        "g": 400,
+        "ev56": 134
+      },
+      {
+        "g": 450,
+        "ev56": 567
+      },
+      {
+        "g": 500,
+        "ev56": 1045
+      },
+      {
+        "g": 550,
+        "ev56": 1571
+      },
+      {
+        "g": 600,
+        "ev56": 2152
+      },
+      {
+        "g": 650,
+        "ev56": 2792
+      },
+      {
+        "g": 700,
+        "ev56": 3498
+      },
+      {
+        "g": 750,
+        "ev56": 4276
+      },
+      {
+        "g": 800,
+        "ev56": 5134
+      },
+      {
+        "g": 850,
+        "ev56": 6079
+      },
+      {
+        "g": 900,
+        "ev56": 7122
+      },
+      {
+        "g": 950,
+        "ev56": 8272
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "パチスロ ファイヤードリフト",
+    "ceiling": 850,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1183
+      },
+      {
+        "g": 50,
+        "ev56": -1133
+      },
+      {
+        "g": 100,
+        "ev56": -1071
+      },
+      {
+        "g": 150,
+        "ev56": -997
+      },
+      {
+        "g": 200,
+        "ev56": -907
+      },
+      {
+        "g": 250,
+        "ev56": -797
+      },
+      {
+        "g": 300,
+        "ev56": -664
+      },
+      {
+        "g": 350,
+        "ev56": -502
+      },
+      {
+        "g": 400,
+        "ev56": -306
+      },
+      {
+        "g": 450,
+        "ev56": -67
+      },
+      {
+        "g": 500,
+        "ev56": 223
+      },
+      {
+        "g": 550,
+        "ev56": 576
+      },
+      {
+        "g": 600,
+        "ev56": 1004
+      },
+      {
+        "g": 650,
+        "ev56": 1523
+      },
+      {
+        "g": 700,
+        "ev56": 2155
+      },
+      {
+        "g": 750,
+        "ev56": 2922
+      },
+      {
+        "g": 800,
+        "ev56": 3854
+      },
+      {
+        "g": 850,
+        "ev56": 4987
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [
+      {
+        "label": "設定変更時",
+        "ceiling": 600
+      }
+    ],
+    "evTableShort": []
+  },
+  {
+    "name": "麻雀格闘倶楽部 覚醒",
+    "ceiling": 950,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1133
+      },
+      {
+        "g": 50,
+        "ev56": -1104
+      },
+      {
+        "g": 100,
+        "ev56": -1068
+      },
+      {
+        "g": 150,
+        "ev56": -1025
+      },
+      {
+        "g": 200,
+        "ev56": -972
+      },
+      {
+        "g": 250,
+        "ev56": -907
+      },
+      {
+        "g": 300,
+        "ev56": -828
+      },
+      {
+        "g": 350,
+        "ev56": -732
+      },
+      {
+        "g": 400,
+        "ev56": -614
+      },
+      {
+        "g": 450,
+        "ev56": -471
+      },
+      {
+        "g": 500,
+        "ev56": -296
+      },
+      {
+        "g": 550,
+        "ev56": -82
+      },
+      {
+        "g": 600,
+        "ev56": 179
+      },
+      {
+        "g": 650,
+        "ev56": 497
+      },
+      {
+        "g": 700,
+        "ev56": 885
+      },
+      {
+        "g": 750,
+        "ev56": 1359
+      },
+      {
+        "g": 800,
+        "ev56": 1937
+      },
+      {
+        "g": 850,
+        "ev56": 2643
+      },
+      {
+        "g": 900,
+        "ev56": 3505
+      },
+      {
+        "g": 950,
+        "ev56": 4556
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "パチスロ バイオハザード7 レジデント イービル",
+    "ceiling": 700,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1960
+      },
+      {
+        "g": 50,
+        "ev56": -1588
+      },
+      {
+        "g": 100,
+        "ev56": -1181
+      },
+      {
+        "g": 150,
+        "ev56": -735
+      },
+      {
+        "g": 200,
+        "ev56": -246
+      },
+      {
+        "g": 250,
+        "ev56": 290
+      },
+      {
+        "g": 300,
+        "ev56": 877
+      },
+      {
+        "g": 350,
+        "ev56": 1522
+      },
+      {
+        "g": 400,
+        "ev56": 2228
+      },
+      {
+        "g": 450,
+        "ev56": 3002
+      },
+      {
+        "g": 500,
+        "ev56": 3850
+      },
+      {
+        "g": 550,
+        "ev56": 4780
+      },
+      {
+        "g": 600,
+        "ev56": 5800
+      },
+      {
+        "g": 650,
+        "ev56": 6917
+      },
+      {
+        "g": 700,
+        "ev56": 8142
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "パチスロ 炎炎ノ消防隊",
+    "ceiling": 800,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1235
+      },
+      {
+        "g": 50,
+        "ev56": -1178
+      },
+      {
+        "g": 100,
+        "ev56": -1109
+      },
+      {
+        "g": 150,
+        "ev56": -1025
+      },
+      {
+        "g": 200,
+        "ev56": -922
+      },
+      {
+        "g": 250,
+        "ev56": -797
+      },
+      {
+        "g": 300,
+        "ev56": -644
+      },
+      {
+        "g": 350,
+        "ev56": -457
+      },
+      {
+        "g": 400,
+        "ev56": -229
+      },
+      {
+        "g": 450,
+        "ev56": 49
+      },
+      {
+        "g": 500,
+        "ev56": 388
+      },
+      {
+        "g": 550,
+        "ev56": 802
+      },
+      {
+        "g": 600,
+        "ev56": 1307
+      },
+      {
+        "g": 650,
+        "ev56": 1924
+      },
+      {
+        "g": 700,
+        "ev56": 2677
+      },
+      {
+        "g": 750,
+        "ev56": 3596
+      },
+      {
+        "g": 800,
+        "ev56": 4717
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [
+      {
+        "label": "設定変更時",
+        "ceiling": 650
+      }
+    ],
+    "evTableShort": []
+  },
+  {
+    "name": "パチスロ頭文字D",
+    "ceiling": null,
+    "evTable": [],
+    "status": "no_ceiling",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "パチスロ幼女戦記",
+    "ceiling": 450,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1078
+      },
+      {
+        "g": 50,
+        "ev56": -831
+      },
+      {
+        "g": 100,
+        "ev56": -537
+      },
+      {
+        "g": 150,
+        "ev56": -189
+      },
+      {
+        "g": 200,
+        "ev56": 225
+      },
+      {
+        "g": 250,
+        "ev56": 717
+      },
+      {
+        "g": 300,
+        "ev56": 1300
+      },
+      {
+        "g": 350,
+        "ev56": 1993
+      },
+      {
+        "g": 400,
+        "ev56": 2816
+      },
+      {
+        "g": 450,
+        "ev56": 3792
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "回胴式遊技機 グランベルム",
+    "ceiling": 600,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1417
+      },
+      {
+        "g": 50,
+        "ev56": -1218
+      },
+      {
+        "g": 100,
+        "ev56": -985
+      },
+      {
+        "g": 150,
+        "ev56": -715
+      },
+      {
+        "g": 200,
+        "ev56": -400
+      },
+      {
+        "g": 250,
+        "ev56": -33
+      },
+      {
+        "g": 300,
+        "ev56": 394
+      },
+      {
+        "g": 350,
+        "ev56": 892
+      },
+      {
+        "g": 400,
+        "ev56": 1471
+      },
+      {
+        "g": 450,
+        "ev56": 2145
+      },
+      {
+        "g": 500,
+        "ev56": 2931
+      },
+      {
+        "g": 550,
+        "ev56": 3845
+      },
+      {
+        "g": 600,
+        "ev56": 4909
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "クランキークレスト",
+    "ceiling": null,
+    "evTable": [],
+    "status": "no_ceiling",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "パチスロ 新鬼武者2",
+    "ceiling": 950,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1790
+      },
+      {
+        "g": 50,
+        "ev56": -1631
+      },
+      {
+        "g": 100,
+        "ev56": -1453
+      },
+      {
+        "g": 150,
+        "ev56": -1255
+      },
+      {
+        "g": 200,
+        "ev56": -1034
+      },
+      {
+        "g": 250,
+        "ev56": -787
+      },
+      {
+        "g": 300,
+        "ev56": -511
+      },
+      {
+        "g": 350,
+        "ev56": -204
+      },
+      {
+        "g": 400,
+        "ev56": 139
+      },
+      {
+        "g": 450,
+        "ev56": 522
+      },
+      {
+        "g": 500,
+        "ev56": 950
+      },
+      {
+        "g": 550,
+        "ev56": 1427
+      },
+      {
+        "g": 600,
+        "ev56": 1959
+      },
+      {
+        "g": 650,
+        "ev56": 2554
+      },
+      {
+        "g": 700,
+        "ev56": 3217
+      },
+      {
+        "g": 750,
+        "ev56": 3957
+      },
+      {
+        "g": 800,
+        "ev56": 4783
+      },
+      {
+        "g": 850,
+        "ev56": 5704
+      },
+      {
+        "g": 900,
+        "ev56": 6733
+      },
+      {
+        "g": 950,
+        "ev56": 7881
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "SLOT劇場版 魔法少女まどか☆マギカ[前編]始まりの物語／[後編]永遠の物語",
+    "ceiling": 650,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1554
+      },
+      {
+        "g": 50,
+        "ev56": -1369
+      },
+      {
+        "g": 100,
+        "ev56": -1149
+      },
+      {
+        "g": 150,
+        "ev56": -890
+      },
+      {
+        "g": 200,
+        "ev56": -583
+      },
+      {
+        "g": 250,
+        "ev56": -219
+      },
+      {
+        "g": 300,
+        "ev56": 211
+      },
+      {
+        "g": 350,
+        "ev56": 720
+      },
+      {
+        "g": 400,
+        "ev56": 1322
+      },
+      {
+        "g": 450,
+        "ev56": 2035
+      },
+      {
+        "g": 500,
+        "ev56": 2878
+      },
+      {
+        "g": 550,
+        "ev56": 3876
+      },
+      {
+        "g": 600,
+        "ev56": 5056
+      },
+      {
+        "g": 650,
+        "ev56": 6453
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "パチスロ ハードボイルド",
+    "ceiling": 950,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -893
+      },
+      {
+        "g": 50,
+        "ev56": -885
+      },
+      {
+        "g": 100,
+        "ev56": -874
+      },
+      {
+        "g": 150,
+        "ev56": -860
+      },
+      {
+        "g": 200,
+        "ev56": -841
+      },
+      {
+        "g": 250,
+        "ev56": -817
+      },
+      {
+        "g": 300,
+        "ev56": -786
+      },
+      {
+        "g": 350,
+        "ev56": -745
+      },
+      {
+        "g": 400,
+        "ev56": -691
+      },
+      {
+        "g": 450,
+        "ev56": -622
+      },
+      {
+        "g": 500,
+        "ev56": -531
+      },
+      {
+        "g": 550,
+        "ev56": -413
+      },
+      {
+        "g": 600,
+        "ev56": -258
+      },
+      {
+        "g": 650,
+        "ev56": -57
+      },
+      {
+        "g": 700,
+        "ev56": 205
+      },
+      {
+        "g": 750,
+        "ev56": 546
+      },
+      {
+        "g": 800,
+        "ev56": 992
+      },
+      {
+        "g": 850,
+        "ev56": 1572
+      },
+      {
+        "g": 900,
+        "ev56": 2329
+      },
+      {
+        "g": 950,
+        "ev56": 3315
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "Lアクダマドライブ",
+    "ceiling": 950,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -2100
+      },
+      {
+        "g": 50,
+        "ev56": -2007
+      },
+      {
+        "g": 100,
+        "ev56": -1899
+      },
+      {
+        "g": 150,
+        "ev56": -1773
+      },
+      {
+        "g": 200,
+        "ev56": -1628
+      },
+      {
+        "g": 250,
+        "ev56": -1459
+      },
+      {
+        "g": 300,
+        "ev56": -1264
+      },
+      {
+        "g": 350,
+        "ev56": -1086
+      },
+      {
+        "g": 400,
+        "ev56": -775
+      },
+      {
+        "g": 450,
+        "ev56": -471
+      },
+      {
+        "g": 500,
+        "ev56": -118
+      },
+      {
+        "g": 550,
+        "ev56": 291
+      },
+      {
+        "g": 600,
+        "ev56": 765
+      },
+      {
+        "g": 650,
+        "ev56": 1315
+      },
+      {
+        "g": 700,
+        "ev56": 1952
+      },
+      {
+        "g": 750,
+        "ev56": 2691
+      },
+      {
+        "g": 800,
+        "ev56": 3547
+      },
+      {
+        "g": 850,
+        "ev56": 4540
+      },
+      {
+        "g": 900,
+        "ev56": 5690
+      },
+      {
+        "g": 950,
+        "ev56": 7025
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "Ｌタクトオーパス デスティニー",
+    "ceiling": 950,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -2441
+      },
+      {
+        "g": 50,
+        "ev56": -2325
+      },
+      {
+        "g": 100,
+        "ev56": -2193
+      },
+      {
+        "g": 150,
+        "ev56": -2043
+      },
+      {
+        "g": 200,
+        "ev56": -1872
+      },
+      {
+        "g": 250,
+        "ev56": -1678
+      },
+      {
+        "g": 300,
+        "ev56": -1457
+      },
+      {
+        "g": 350,
+        "ev56": -1206
+      },
+      {
+        "g": 400,
+        "ev56": -920
+      },
+      {
+        "g": 450,
+        "ev56": -594
+      },
+      {
+        "g": 500,
+        "ev56": -224
+      },
+      {
+        "g": 550,
+        "ev56": 197
+      },
+      {
+        "g": 600,
+        "ev56": 676
+      },
+      {
+        "g": 650,
+        "ev56": 1222
+      },
+      {
+        "g": 700,
+        "ev56": 1842
+      },
+      {
+        "g": 750,
+        "ev56": 2548
+      },
+      {
+        "g": 800,
+        "ev56": 3351
+      },
+      {
+        "g": 850,
+        "ev56": 4265
+      },
+      {
+        "g": 900,
+        "ev56": 5304
+      },
+      {
+        "g": 950,
+        "ev56": 6487
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "銀河英雄伝説 Die Neue These",
+    "ceiling": 950,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1629
+      },
+      {
+        "g": 50,
+        "ev56": -1509
+      },
+      {
+        "g": 100,
+        "ev56": -1373
+      },
+      {
+        "g": 150,
+        "ev56": -1218
+      },
+      {
+        "g": 200,
+        "ev56": -1042
+      },
+      {
+        "g": 250,
+        "ev56": -843
+      },
+      {
+        "g": 300,
+        "ev56": -616
+      },
+      {
+        "g": 350,
+        "ev56": -359
+      },
+      {
+        "g": 400,
+        "ev56": -67
+      },
+      {
+        "g": 450,
+        "ev56": 264
+      },
+      {
+        "g": 500,
+        "ev56": 641
+      },
+      {
+        "g": 550,
+        "ev56": 1069
+      },
+      {
+        "g": 600,
+        "ev56": 1554
+      },
+      {
+        "g": 650,
+        "ev56": 2106
+      },
+      {
+        "g": 700,
+        "ev56": 2732
+      },
+      {
+        "g": 750,
+        "ev56": 3443
+      },
+      {
+        "g": 800,
+        "ev56": 4251
+      },
+      {
+        "g": 850,
+        "ev56": 5168
+      },
+      {
+        "g": 900,
+        "ev56": 6210
+      },
+      {
+        "g": 950,
+        "ev56": 7392
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "ニューパルサーSP4 with 太鼓の達人",
+    "ceiling": null,
+    "evTable": [],
+    "status": "no_ceiling",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "サンダーVライトニング",
+    "ceiling": null,
+    "evTable": [],
+    "status": "no_ceiling",
+    "kirihal": null,
+    "ceilingShort": [],
+    "evTableShort": []
+  },
+  {
+    "name": "スマスロ とある科学の超電磁砲2",
+    "ceiling": 950,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -2047
+      },
+      {
+        "g": 50,
+        "ev56": -1962
+      },
+      {
+        "g": 100,
+        "ev56": -1864
+      },
+      {
+        "g": 150,
+        "ev56": -1749
+      },
+      {
+        "g": 200,
+        "ev56": -1616
+      },
+      {
+        "g": 250,
+        "ev56": -1462
+      },
+      {
+        "g": 300,
+        "ev56": -1282
+      },
+      {
+        "g": 350,
+        "ev56": -1074
+      },
+      {
+        "g": 400,
+        "ev56": -832
+      },
+      {
+        "g": 450,
+        "ev56": -551
+      },
+      {
+        "g": 500,
+        "ev56": -224
+      },
+      {
+        "g": 550,
+        "ev56": 155
+      },
+      {
+        "g": 600,
+        "ev56": 595
+      },
+      {
+        "g": 650,
+        "ev56": 1107
+      },
+      {
+        "g": 700,
+        "ev56": 1701
+      },
+      {
+        "g": 750,
+        "ev56": 2390
+      },
+      {
+        "g": 800,
+        "ev56": 3192
+      },
+      {
+        "g": 850,
+        "ev56": 4122
+      },
+      {
+        "g": 900,
+        "ev56": 5203
+      },
+      {
+        "g": 950,
+        "ev56": 6458
+      }
+    ],
+    "status": "ok",
+    "kirihal": null,
+    "ceilingShort": [
+      {
+        "label": "設定変更時",
+        "ceiling": 699
+      },
+      {
+        "label": "リセット後",
+        "ceiling": 350
+      }
+    ],
+    "evTableShort": []
+  },
+  {
+    "name": "スマスロ　とある魔術の禁書目録２",
+    "ceiling": 1150,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1982
+      },
+      {
+        "g": 50,
+        "ev56": -1882
+      },
+      {
+        "g": 100,
+        "ev56": -1769
+      },
+      {
+        "g": 150,
+        "ev56": -1641
+      },
+      {
+        "g": 200,
+        "ev56": -1498
+      },
+      {
+        "g": 250,
+        "ev56": -1336
+      },
+      {
+        "g": 300,
+        "ev56": -1155
+      },
+      {
+        "g": 350,
+        "ev56": -950
+      },
+      {
+        "g": 400,
+        "ev56": -720
+      },
+      {
+        "g": 450,
+        "ev56": -460
+      },
+      {
+        "g": 500,
+        "ev56": -168
+      },
+      {
+        "g": 550,
+        "ev56": 160
+      },
+      {
+        "g": 600,
+        "ev56": 530
+      },
+      {
+        "g": 650,
+        "ev56": 947
+      },
+      {
+        "g": 700,
+        "ev56": 1416
+      },
+      {
+        "g": 750,
+        "ev56": 1943
+      },
+      {
+        "g": 800,
+        "ev56": 2538
+      },
+      {
+        "g": 850,
+        "ev56": 3207
+      },
+      {
+        "g": 900,
+        "ev56": 3960
+      },
+      {
+        "g": 950,
+        "ev56": 4807
+      },
+      {
+        "g": 1000,
+        "ev56": 5762
+      },
+      {
+        "g": 1050,
+        "ev56": 6836
+      },
+      {
+        "g": 1100,
+        "ev56": 8046
+      },
+      {
+        "g": 1150,
+        "ev56": 9407
+      }
+    ],
+    "status": "ok",
+    "cz_ceiling": null,
+    "czEvTable": null,
+    "czEvTableReset": null,
+    "ceilingShort": [],
+    "evTableShort": null
+  },
+  {
+    "name": "スマスロ　とんでもスキルで異世界放浪メシ",
+    "ceiling": 950,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -2296
+      },
+      {
+        "g": 50,
+        "ev56": -2181
+      },
+      {
+        "g": 100,
+        "ev56": -2050
+      },
+      {
+        "g": 150,
+        "ev56": -1900
+      },
+      {
+        "g": 200,
+        "ev56": -1729
+      },
+      {
+        "g": 250,
+        "ev56": -1533
+      },
+      {
+        "g": 300,
+        "ev56": -1310
+      },
+      {
+        "g": 350,
+        "ev56": -1054
+      },
+      {
+        "g": 400,
+        "ev56": -763
+      },
+      {
+        "g": 450,
+        "ev56": -429
+      },
+      {
+        "g": 500,
+        "ev56": -48
+      },
+      {
+        "g": 550,
+        "ev56": 388
+      },
+      {
+        "g": 600,
+        "ev56": 885
+      },
+      {
+        "g": 650,
+        "ev56": 1454
+      },
+      {
+        "g": 700,
+        "ev56": 2104
+      },
+      {
+        "g": 750,
+        "ev56": 2846
+      },
+      {
+        "g": 800,
+        "ev56": 3695
+      },
+      {
+        "g": 850,
+        "ev56": 4664
+      },
+      {
+        "g": 900,
+        "ev56": 5772
+      },
+      {
+        "g": 950,
+        "ev56": 7038
+      }
+    ],
+    "status": "ok",
+    "cz_ceiling": null,
+    "czEvTable": null,
+    "czEvTableReset": null,
+    "ceilingShort": [],
+    "evTableShort": null
+  },
+  {
+    "name": "スマスロ　やじきた道中記参る！",
+    "ceiling": 600,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1529
+      },
+      {
+        "g": 50,
+        "ev56": -1414
+      },
+      {
+        "g": 100,
+        "ev56": -1274
+      },
+      {
+        "g": 150,
+        "ev56": -1102
+      },
+      {
+        "g": 200,
+        "ev56": -891
+      },
+      {
+        "g": 250,
+        "ev56": -634
+      },
+      {
+        "g": 300,
+        "ev56": -320
+      },
+      {
+        "g": 350,
+        "ev56": 64
+      },
+      {
+        "g": 400,
+        "ev56": 534
+      },
+      {
+        "g": 450,
+        "ev56": 1108
+      },
+      {
+        "g": 500,
+        "ev56": 1810
+      },
+      {
+        "g": 550,
+        "ev56": 2668
+      },
+      {
+        "g": 600,
+        "ev56": 3717
+      }
+    ],
+    "status": "ok",
+    "cz_ceiling": null,
+    "czEvTable": null,
+    "czEvTableReset": null,
+    "ceilingShort": [],
+    "evTableShort": null
+  },
+  {
+    "name": "スマスロ　ギルティクラウン２",
+    "ceiling": 750,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1172
+      },
+      {
+        "g": 50,
+        "ev56": -1133
+      },
+      {
+        "g": 100,
+        "ev56": -1084
+      },
+      {
+        "g": 150,
+        "ev56": -1022
+      },
+      {
+        "g": 200,
+        "ev56": -943
+      },
+      {
+        "g": 250,
+        "ev56": -843
+      },
+      {
+        "g": 300,
+        "ev56": -716
+      },
+      {
+        "g": 350,
+        "ev56": -555
+      },
+      {
+        "g": 400,
+        "ev56": -350
+      },
+      {
+        "g": 450,
+        "ev56": -91
+      },
+      {
+        "g": 500,
+        "ev56": 238
+      },
+      {
+        "g": 550,
+        "ev56": 655
+      },
+      {
+        "g": 600,
+        "ev56": 1183
+      },
+      {
+        "g": 650,
+        "ev56": 1854
+      },
+      {
+        "g": 700,
+        "ev56": 2705
+      },
+      {
+        "g": 750,
+        "ev56": 3783
+      }
+    ],
+    "status": "ok",
+    "cz_ceiling": null,
+    "czEvTable": null,
+    "czEvTableReset": null,
+    "ceilingShort": [],
+    "evTableShort": null
+  },
+  {
+    "name": "スマスロ　ストリートファイター６",
+    "ceiling": 400,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1416
+      },
+      {
+        "g": 50,
+        "ev56": -893
+      },
+      {
+        "g": 100,
+        "ev56": -302
+      },
+      {
+        "g": 150,
+        "ev56": 366
+      },
+      {
+        "g": 200,
+        "ev56": 1122
+      },
+      {
+        "g": 250,
+        "ev56": 1978
+      },
+      {
+        "g": 300,
+        "ev56": 2946
+      },
+      {
+        "g": 350,
+        "ev56": 4041
+      },
+      {
+        "g": 400,
+        "ev56": 5279
+      }
+    ],
+    "status": "ok",
+    "cz_ceiling": null,
+    "czEvTable": null,
+    "czEvTableReset": null,
+    "ceilingShort": [],
+    "evTableShort": null
+  },
+  {
+    "name": "スマスロ　緑ドン　ＶＩＶＡ！情熱南米編　ＲＥＶＩＶＡＬ",
+    "ceiling": 1200,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1398
+      },
+      {
+        "g": 50,
+        "ev56": -1381
+      },
+      {
+        "g": 100,
+        "ev56": -1359
+      },
+      {
+        "g": 150,
+        "ev56": -1334
+      },
+      {
+        "g": 200,
+        "ev56": -1303
+      },
+      {
+        "g": 250,
+        "ev56": -1267
+      },
+      {
+        "g": 300,
+        "ev56": -1223
+      },
+      {
+        "g": 350,
+        "ev56": -1170
+      },
+      {
+        "g": 400,
+        "ev56": -1108
+      },
+      {
+        "g": 450,
+        "ev56": -1032
+      },
+      {
+        "g": 500,
+        "ev56": -942
+      },
+      {
+        "g": 550,
+        "ev56": -834
+      },
+      {
+        "g": 600,
+        "ev56": -705
+      },
+      {
+        "g": 650,
+        "ev56": -551
+      },
+      {
+        "g": 700,
+        "ev56": -366
+      },
+      {
+        "g": 750,
+        "ev56": -144
+      },
+      {
+        "g": 800,
+        "ev56": 121
+      },
+      {
+        "g": 850,
+        "ev56": 439
+      },
+      {
+        "g": 900,
+        "ev56": 819
+      },
+      {
+        "g": 950,
+        "ev56": 1274
+      },
+      {
+        "g": 1000,
+        "ev56": 1819
+      },
+      {
+        "g": 1050,
+        "ev56": 2472
+      },
+      {
+        "g": 1100,
+        "ev56": 3253
+      },
+      {
+        "g": 1150,
+        "ev56": 4189
+      },
+      {
+        "g": 1200,
+        "ev56": 5309
+      }
+    ],
+    "status": "ok",
+    "cz_ceiling": null,
+    "czEvTable": null,
+    "czEvTableReset": null,
+    "ceilingShort": [],
+    "evTableShort": null
+  },
+  {
+    "name": "スマスロ交響詩篇エウレカセブン４　ＨＩ‐ＥＶＯＬＵＴＩＯＮ",
+    "ceiling": 950,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1771
+      },
+      {
+        "g": 50,
+        "ev56": -1646
+      },
+      {
+        "g": 100,
+        "ev56": -1504
+      },
+      {
+        "g": 150,
+        "ev56": -1343
+      },
+      {
+        "g": 200,
+        "ev56": -1160
+      },
+      {
+        "g": 250,
+        "ev56": -953
+      },
+      {
+        "g": 300,
+        "ev56": -718
+      },
+      {
+        "g": 350,
+        "ev56": -452
+      },
+      {
+        "g": 400,
+        "ev56": -150
+      },
+      {
+        "g": 450,
+        "ev56": 192
+      },
+      {
+        "g": 500,
+        "ev56": 580
+      },
+      {
+        "g": 550,
+        "ev56": 1019
+      },
+      {
+        "g": 600,
+        "ev56": 1518
+      },
+      {
+        "g": 650,
+        "ev56": 2082
+      },
+      {
+        "g": 700,
+        "ev56": 2723
+      },
+      {
+        "g": 750,
+        "ev56": 3449
+      },
+      {
+        "g": 800,
+        "ev56": 4272
+      },
+      {
+        "g": 850,
+        "ev56": 5206
+      },
+      {
+        "g": 900,
+        "ev56": 6264
+      },
+      {
+        "g": 950,
+        "ev56": 7463
+      }
+    ],
+    "status": "ok",
+    "cz_ceiling": null,
+    "czEvTable": null,
+    "czEvTableReset": null,
+    "ceilingShort": [],
+    "evTableShort": null
+  },
+  {
+    "name": "スマート沖スロ　ダークハイビ",
+    "ceiling": 950,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1650
+      },
+      {
+        "g": 50,
+        "ev56": -1596
+      },
+      {
+        "g": 100,
+        "ev56": -1531
+      },
+      {
+        "g": 150,
+        "ev56": -1455
+      },
+      {
+        "g": 200,
+        "ev56": -1363
+      },
+      {
+        "g": 250,
+        "ev56": -1254
+      },
+      {
+        "g": 300,
+        "ev56": -1123
+      },
+      {
+        "g": 350,
+        "ev56": -968
+      },
+      {
+        "g": 400,
+        "ev56": -782
+      },
+      {
+        "g": 450,
+        "ev56": -561
+      },
+      {
+        "g": 500,
+        "ev56": -297
+      },
+      {
+        "g": 550,
+        "ev56": 18
+      },
+      {
+        "g": 600,
+        "ev56": 393
+      },
+      {
+        "g": 650,
+        "ev56": 841
+      },
+      {
+        "g": 700,
+        "ev56": 1374
+      },
+      {
+        "g": 750,
+        "ev56": 2011
+      },
+      {
+        "g": 800,
+        "ev56": 2770
+      },
+      {
+        "g": 850,
+        "ev56": 3676
+      },
+      {
+        "g": 900,
+        "ev56": 4756
+      },
+      {
+        "g": 950,
+        "ev56": 6044
+      }
+    ],
+    "status": "ok",
+    "cz_ceiling": null,
+    "czEvTable": null,
+    "czEvTableReset": null,
+    "ceilingShort": [],
+    "evTableShort": null
+  },
+  {
+    "name": "スロット　ワールドダイスター",
+    "ceiling": 950,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1911
+      },
+      {
+        "g": 50,
+        "ev56": -1832
+      },
+      {
+        "g": 100,
+        "ev56": -1738
+      },
+      {
+        "g": 150,
+        "ev56": -1629
+      },
+      {
+        "g": 200,
+        "ev56": -1502
+      },
+      {
+        "g": 250,
+        "ev56": -1353
+      },
+      {
+        "g": 300,
+        "ev56": -1179
+      },
+      {
+        "g": 350,
+        "ev56": -975
+      },
+      {
+        "g": 400,
+        "ev56": -737
+      },
+      {
+        "g": 450,
+        "ev56": -459
+      },
+      {
+        "g": 500,
+        "ev56": -134
+      },
+      {
+        "g": 550,
+        "ev56": 246
+      },
+      {
+        "g": 600,
+        "ev56": 691
+      },
+      {
+        "g": 650,
+        "ev56": 1210
+      },
+      {
+        "g": 700,
+        "ev56": 1818
+      },
+      {
+        "g": 750,
+        "ev56": 2528
+      },
+      {
+        "g": 800,
+        "ev56": 3358
+      },
+      {
+        "g": 850,
+        "ev56": 4328
+      },
+      {
+        "g": 900,
+        "ev56": 5463
+      },
+      {
+        "g": 950,
+        "ev56": 6789
+      }
+    ],
+    "status": "ok",
+    "cz_ceiling": null,
+    "czEvTable": null,
+    "czEvTableReset": null,
+    "ceilingShort": [],
+    "evTableShort": null
+  },
+  {
+    "name": "パチスロ　バイオハザード　ＲＥ：２",
+    "ceiling": 950,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1564
+      },
+      {
+        "g": 50,
+        "ev56": -1466
+      },
+      {
+        "g": 100,
+        "ev56": -1355
+      },
+      {
+        "g": 150,
+        "ev56": -1226
+      },
+      {
+        "g": 200,
+        "ev56": -1079
+      },
+      {
+        "g": 250,
+        "ev56": -911
+      },
+      {
+        "g": 300,
+        "ev56": -718
+      },
+      {
+        "g": 350,
+        "ev56": -497
+      },
+      {
+        "g": 400,
+        "ev56": -243
+      },
+      {
+        "g": 450,
+        "ev56": 47
+      },
+      {
+        "g": 500,
+        "ev56": 380
+      },
+      {
+        "g": 550,
+        "ev56": 762
+      },
+      {
+        "g": 600,
+        "ev56": 1199
+      },
+      {
+        "g": 650,
+        "ev56": 1700
+      },
+      {
+        "g": 700,
+        "ev56": 2274
+      },
+      {
+        "g": 750,
+        "ev56": 2932
+      },
+      {
+        "g": 800,
+        "ev56": 3686
+      },
+      {
+        "g": 850,
+        "ev56": 4550
+      },
+      {
+        "g": 900,
+        "ev56": 5540
+      },
+      {
+        "g": 950,
+        "ev56": 6675
+      }
+    ],
+    "status": "ok",
+    "cz_ceiling": null,
+    "czEvTable": null,
+    "czEvTableReset": null,
+    "ceilingShort": [],
+    "evTableShort": null
+  },
+  {
+    "name": "ヤバチバ",
+    "ceiling": 950,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -3301
+      },
+      {
+        "g": 50,
+        "ev56": -3119
+      },
+      {
+        "g": 100,
+        "ev56": -2915
+      },
+      {
+        "g": 150,
+        "ev56": -2687
+      },
+      {
+        "g": 200,
+        "ev56": -2431
+      },
+      {
+        "g": 250,
+        "ev56": -2146
+      },
+      {
+        "g": 300,
+        "ev56": -1826
+      },
+      {
+        "g": 350,
+        "ev56": -1468
+      },
+      {
+        "g": 400,
+        "ev56": -1067
+      },
+      {
+        "g": 450,
+        "ev56": -619
+      },
+      {
+        "g": 500,
+        "ev56": -117
+      },
+      {
+        "g": 550,
+        "ev56": 444
+      },
+      {
+        "g": 600,
+        "ev56": 1073
+      },
+      {
+        "g": 650,
+        "ev56": 1776
+      },
+      {
+        "g": 700,
+        "ev56": 2563
+      },
+      {
+        "g": 750,
+        "ev56": 3443
+      },
+      {
+        "g": 800,
+        "ev56": 4429
+      },
+      {
+        "g": 850,
+        "ev56": 5532
+      },
+      {
+        "g": 900,
+        "ev56": 6766
+      },
+      {
+        "g": 950,
+        "ev56": 8147
+      }
+    ],
+    "status": "ok",
+    "cz_ceiling": null,
+    "czEvTable": null,
+    "czEvTableReset": null,
+    "ceilingShort": [],
+    "evTableShort": null
+  },
+  {
+    "name": "ローティス",
+    "ceiling": 850,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1795
+      },
+      {
+        "g": 50,
+        "ev56": -1706
+      },
+      {
+        "g": 100,
+        "ev56": -1601
+      },
+      {
+        "g": 150,
+        "ev56": -1476
+      },
+      {
+        "g": 200,
+        "ev56": -1330
+      },
+      {
+        "g": 250,
+        "ev56": -1156
+      },
+      {
+        "g": 300,
+        "ev56": -952
+      },
+      {
+        "g": 350,
+        "ev56": -711
+      },
+      {
+        "g": 400,
+        "ev56": -426
+      },
+      {
+        "g": 450,
+        "ev56": -91
+      },
+      {
+        "g": 500,
+        "ev56": 305
+      },
+      {
+        "g": 550,
+        "ev56": 773
+      },
+      {
+        "g": 600,
+        "ev56": 1324
+      },
+      {
+        "g": 650,
+        "ev56": 1975
+      },
+      {
+        "g": 700,
+        "ev56": 2743
+      },
+      {
+        "g": 750,
+        "ev56": 3650
+      },
+      {
+        "g": 800,
+        "ev56": 4719
+      },
+      {
+        "g": 850,
+        "ev56": 5981
+      }
+    ],
+    "status": "ok",
+    "cz_ceiling": null,
+    "czEvTable": null,
+    "czEvTableReset": null,
+    "ceilingShort": [],
+    "evTableShort": null
+  },
+  {
+    "name": "戦国コレクション６",
+    "ceiling": 950,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -2473
+      },
+      {
+        "g": 50,
+        "ev56": -2347
+      },
+      {
+        "g": 100,
+        "ev56": -2204
+      },
+      {
+        "g": 150,
+        "ev56": -2042
+      },
+      {
+        "g": 200,
+        "ev56": -1858
+      },
+      {
+        "g": 250,
+        "ev56": -1649
+      },
+      {
+        "g": 300,
+        "ev56": -1412
+      },
+      {
+        "g": 350,
+        "ev56": -1142
+      },
+      {
+        "g": 400,
+        "ev56": -837
+      },
+      {
+        "g": 450,
+        "ev56": -490
+      },
+      {
+        "g": 500,
+        "ev56": -96
+      },
+      {
+        "g": 550,
+        "ev56": 351
+      },
+      {
+        "g": 600,
+        "ev56": 859
+      },
+      {
+        "g": 650,
+        "ev56": 1435
+      },
+      {
+        "g": 700,
+        "ev56": 2089
+      },
+      {
+        "g": 750,
+        "ev56": 2831
+      },
+      {
+        "g": 800,
+        "ev56": 3673
+      },
+      {
+        "g": 850,
+        "ev56": 4630
+      },
+      {
+        "g": 900,
+        "ev56": 5715
+      },
+      {
+        "g": 950,
+        "ev56": 6948
+      }
+    ],
+    "status": "ok",
+    "cz_ceiling": null,
+    "czEvTable": null,
+    "czEvTableReset": null,
+    "ceilingShort": [],
+    "evTableShort": null
+  },
+  {
+    "name": "政宗　戦極",
+    "ceiling": 450,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -969
+      },
+      {
+        "g": 50,
+        "ev56": -884
+      },
+      {
+        "g": 100,
+        "ev56": -769
+      },
+      {
+        "g": 150,
+        "ev56": -613
+      },
+      {
+        "g": 200,
+        "ev56": -401
+      },
+      {
+        "g": 250,
+        "ev56": -114
+      },
+      {
+        "g": 300,
+        "ev56": 276
+      },
+      {
+        "g": 350,
+        "ev56": 804
+      },
+      {
+        "g": 400,
+        "ev56": 1521
+      },
+      {
+        "g": 450,
+        "ev56": 2493
+      }
+    ],
+    "status": "ok",
+    "cz_ceiling": null,
+    "czEvTable": null,
+    "czEvTableReset": null,
+    "ceilingShort": [],
+    "evTableShort": null
+  },
+  {
+    "name": "Ｌ　ＵＬＴＲＡＭＡＮ　最終決戦",
+    "ceiling": 1450,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -2727
+      },
+      {
+        "g": 50,
+        "ev56": -2660
+      },
+      {
+        "g": 100,
+        "ev56": -2585
+      },
+      {
+        "g": 150,
+        "ev56": -2502
+      },
+      {
+        "g": 200,
+        "ev56": -2409
+      },
+      {
+        "g": 250,
+        "ev56": -2305
+      },
+      {
+        "g": 300,
+        "ev56": -2190
+      },
+      {
+        "g": 350,
+        "ev56": -2061
+      },
+      {
+        "g": 400,
+        "ev56": -1918
+      },
+      {
+        "g": 450,
+        "ev56": -1758
+      },
+      {
+        "g": 500,
+        "ev56": -1580
+      },
+      {
+        "g": 550,
+        "ev56": -1382
+      },
+      {
+        "g": 600,
+        "ev56": -1162
+      },
+      {
+        "g": 650,
+        "ev56": -916
+      },
+      {
+        "g": 700,
+        "ev56": -642
+      },
+      {
+        "g": 750,
+        "ev56": -337
+      },
+      {
+        "g": 800,
+        "ev56": 3
+      },
+      {
+        "g": 850,
+        "ev56": 381
+      },
+      {
+        "g": 900,
+        "ev56": 803
+      },
+      {
+        "g": 950,
+        "ev56": 1273
+      },
+      {
+        "g": 1000,
+        "ev56": 1796
+      },
+      {
+        "g": 1050,
+        "ev56": 2379
+      },
+      {
+        "g": 1100,
+        "ev56": 3028
+      },
+      {
+        "g": 1150,
+        "ev56": 3752
+      },
+      {
+        "g": 1200,
+        "ev56": 4558
+      },
+      {
+        "g": 1250,
+        "ev56": 5456
+      },
+      {
+        "g": 1300,
+        "ev56": 6456
+      },
+      {
+        "g": 1350,
+        "ev56": 7570
+      },
+      {
+        "g": 1400,
+        "ev56": 8811
+      },
+      {
+        "g": 1450,
+        "ev56": 10194
+      }
+    ],
+    "status": "ok",
+    "cz_ceiling": null,
+    "czEvTable": null,
+    "czEvTableReset": null,
+    "ceilingShort": [],
+    "evTableShort": null
+  },
+  {
+    "name": "Ｌすーぱぁびん娘",
+    "ceiling": 1150,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -4230
+      },
+      {
+        "g": 50,
+        "ev56": -4010
+      },
+      {
+        "g": 100,
+        "ev56": -3769
+      },
+      {
+        "g": 150,
+        "ev56": -3506
+      },
+      {
+        "g": 200,
+        "ev56": -3219
+      },
+      {
+        "g": 250,
+        "ev56": -2905
+      },
+      {
+        "g": 300,
+        "ev56": -2562
+      },
+      {
+        "g": 350,
+        "ev56": -2188
+      },
+      {
+        "g": 400,
+        "ev56": -1779
+      },
+      {
+        "g": 450,
+        "ev56": -1332
+      },
+      {
+        "g": 500,
+        "ev56": -844
+      },
+      {
+        "g": 550,
+        "ev56": -311
+      },
+      {
+        "g": 600,
+        "ev56": 271
+      },
+      {
+        "g": 650,
+        "ev56": 907
+      },
+      {
+        "g": 700,
+        "ev56": 1602
+      },
+      {
+        "g": 750,
+        "ev56": 2361
+      },
+      {
+        "g": 800,
+        "ev56": 3190
+      },
+      {
+        "g": 850,
+        "ev56": 4095
+      },
+      {
+        "g": 900,
+        "ev56": 5084
+      },
+      {
+        "g": 950,
+        "ev56": 6164
+      },
+      {
+        "g": 1000,
+        "ev56": 7344
+      },
+      {
+        "g": 1050,
+        "ev56": 8633
+      },
+      {
+        "g": 1100,
+        "ev56": 10041
+      },
+      {
+        "g": 1150,
+        "ev56": 11579
+      }
+    ],
+    "status": "ok",
+    "cz_ceiling": null,
+    "czEvTable": null,
+    "czEvTableReset": null,
+    "ceilingShort": [],
+    "evTableShort": null
+  },
+  {
+    "name": "Ｌパチスロ　からくりサーカス２",
+    "ceiling": 840,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -2561
+      },
+      {
+        "g": 40,
+        "ev56": -2427
+      },
+      {
+        "g": 90,
+        "ev56": -2237
+      },
+      {
+        "g": 140,
+        "ev56": -2021
+      },
+      {
+        "g": 190,
+        "ev56": -1774
+      },
+      {
+        "g": 240,
+        "ev56": -1492
+      },
+      {
+        "g": 290,
+        "ev56": -1170
+      },
+      {
+        "g": 340,
+        "ev56": -803
+      },
+      {
+        "g": 390,
+        "ev56": -383
+      },
+      {
+        "g": 440,
+        "ev56": 96
+      },
+      {
+        "g": 490,
+        "ev56": 643
+      },
+      {
+        "g": 540,
+        "ev56": 1267
+      },
+      {
+        "g": 590,
+        "ev56": 1980
+      },
+      {
+        "g": 640,
+        "ev56": 2795
+      },
+      {
+        "g": 690,
+        "ev56": 3724
+      },
+      {
+        "g": 740,
+        "ev56": 4785
+      },
+      {
+        "g": 790,
+        "ev56": 5997
+      },
+      {
+        "g": 840,
+        "ev56": 7381
+      }
+    ],
+    "status": "ok",
+    "cz_ceiling": null,
+    "czEvTable": null,
+    "czEvTableReset": null,
+    "ceilingShort": [],
+    "evTableShort": null
+  },
+  {
+    "name": "Ｌ主役は銭形４",
+    "ceiling": 950,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -2515
+      },
+      {
+        "g": 50,
+        "ev56": -2369
+      },
+      {
+        "g": 100,
+        "ev56": -2204
+      },
+      {
+        "g": 150,
+        "ev56": -2016
+      },
+      {
+        "g": 200,
+        "ev56": -1804
+      },
+      {
+        "g": 250,
+        "ev56": -1564
+      },
+      {
+        "g": 300,
+        "ev56": -1291
+      },
+      {
+        "g": 350,
+        "ev56": -983
+      },
+      {
+        "g": 400,
+        "ev56": -633
+      },
+      {
+        "g": 450,
+        "ev56": -237
+      },
+      {
+        "g": 500,
+        "ev56": 212
+      },
+      {
+        "g": 550,
+        "ev56": 720
+      },
+      {
+        "g": 600,
+        "ev56": 1296
+      },
+      {
+        "g": 650,
+        "ev56": 1949
+      },
+      {
+        "g": 700,
+        "ev56": 2689
+      },
+      {
+        "g": 750,
+        "ev56": 3527
+      },
+      {
+        "g": 800,
+        "ev56": 4476
+      },
+      {
+        "g": 850,
+        "ev56": 5552
+      },
+      {
+        "g": 900,
+        "ev56": 6771
+      },
+      {
+        "g": 950,
+        "ev56": 8151
+      }
+    ],
+    "status": "ok",
+    "cz_ceiling": null,
+    "czEvTable": null,
+    "czEvTableReset": null,
+    "ceilingShort": [],
+    "evTableShort": null
+  },
+  {
+    "name": "Ｌ南国育ち　ＳＰＥＣＩＡＬ",
+    "ceiling": 750,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -2220
+      },
+      {
+        "g": 50,
+        "ev56": -2077
+      },
+      {
+        "g": 100,
+        "ev56": -1910
+      },
+      {
+        "g": 150,
+        "ev56": -1715
+      },
+      {
+        "g": 200,
+        "ev56": -1489
+      },
+      {
+        "g": 250,
+        "ev56": -1225
+      },
+      {
+        "g": 300,
+        "ev56": -918
+      },
+      {
+        "g": 350,
+        "ev56": -560
+      },
+      {
+        "g": 400,
+        "ev56": -143
+      },
+      {
+        "g": 450,
+        "ev56": 343
+      },
+      {
+        "g": 500,
+        "ev56": 908
+      },
+      {
+        "g": 550,
+        "ev56": 1567
+      },
+      {
+        "g": 600,
+        "ev56": 2334
+      },
+      {
+        "g": 650,
+        "ev56": 3228
+      },
+      {
+        "g": 700,
+        "ev56": 4268
+      },
+      {
+        "g": 750,
+        "ev56": 5480
+      }
+    ],
+    "status": "ok",
+    "cz_ceiling": null,
+    "czEvTable": null,
+    "czEvTableReset": null,
+    "ceilingShort": [],
+    "evTableShort": null
+  },
+  {
+    "name": "Ｌ邪神ちゃんドロップキック",
+    "ceiling": 750,
+    "evTable": [
+      {
+        "g": 0,
+        "ev56": -1647
+      },
+      {
+        "g": 50,
+        "ev56": -1559
+      },
+      {
+        "g": 100,
+        "ev56": -1451
+      },
+      {
+        "g": 150,
+        "ev56": -1322
+      },
+      {
+        "g": 200,
+        "ev56": -1166
+      },
+      {
+        "g": 250,
+        "ev56": -977
+      },
+      {
+        "g": 300,
+        "ev56": -750
+      },
+      {
+        "g": 350,
+        "ev56": -475
+      },
+      {
+        "g": 400,
+        "ev56": -144
+      },
+      {
+        "g": 450,
+        "ev56": 257
+      },
+      {
+        "g": 500,
+        "ev56": 739
+      },
+      {
+        "g": 550,
+        "ev56": 1322
+      },
+      {
+        "g": 600,
+        "ev56": 2026
+      },
+      {
+        "g": 650,
+        "ev56": 2875
+      },
+      {
+        "g": 700,
+        "ev56": 3900
+      },
+      {
+        "g": 750,
+        "ev56": 5137
+      }
+    ],
+    "status": "ok",
+    "cz_ceiling": null,
+    "czEvTable": null,
+    "czEvTableReset": null,
+    "ceilingShort": [],
+    "evTableShort": null
   }
 ]
