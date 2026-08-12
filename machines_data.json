@@ -281,20 +281,6 @@
     "ceilingShort": []
   },
   {
-    "name": "ネオアイムジャグラーＥＸ",
-    "ceiling": null,
-    "evTable": [],
-    "status": "no_ceiling",
-    "ceilingShort": []
-  },
-  {
-    "name": "マイジャグラーＶ",
-    "ceiling": null,
-    "evTable": [],
-    "status": "no_ceiling",
-    "ceilingShort": []
-  },
-  {
     "name": "Ｌ　東京喰種",
     "ceiling": 1200,
     "evTable": [
@@ -539,13 +525,6 @@
     ]
   },
   {
-    "name": "キングハナハナ‐３０",
-    "ceiling": null,
-    "evTable": [],
-    "status": "no_ceiling",
-    "ceilingShort": []
-  },
-  {
     "name": "スマスロ北斗の拳",
     "ceiling": 1268,
     "evTable": [
@@ -637,21 +616,7 @@
     "ceilingShort": []
   },
   {
-    "name": "ゴーゴージャグラー３",
-    "ceiling": null,
-    "evTable": [],
-    "status": "no_ceiling",
-    "ceilingShort": []
-  },
-  {
     "name": "沖ドキ！ＢＬＡＣＫ",
-    "ceiling": null,
-    "evTable": [],
-    "status": "no_ceiling",
-    "ceilingShort": []
-  },
-  {
-    "name": "ファンキージャグラー２",
     "ceiling": null,
     "evTable": [],
     "status": "no_ceiling",
@@ -810,13 +775,6 @@
         "ev56": 9355
       }
     ]
-  },
-  {
-    "name": "ハッピージャグラーＶ　ＩＩＩ",
-    "ceiling": null,
-    "evTable": [],
-    "status": "no_ceiling",
-    "ceilingShort": []
   },
   {
     "name": "Ｌパチスロ　革命機ヴァルヴレイヴ２",
@@ -1362,20 +1320,6 @@
     "ceilingShort": []
   },
   {
-    "name": "沖ドキ！ゴージャス　３０Φ",
-    "ceiling": null,
-    "evTable": [],
-    "status": "no_ceiling",
-    "ceilingShort": []
-  },
-  {
-    "name": "ニューキングハナハナＶ‐３０",
-    "ceiling": null,
-    "evTable": [],
-    "status": "no_ceiling",
-    "ceilingShort": []
-  },
-  {
     "name": "スマスロ　ゴッドイーター　リザレクション",
     "ceiling": 1000,
     "evTable": [
@@ -1769,32 +1713,11 @@
     ]
   },
   {
-    "name": "アイムジャグラーＥＸ",
-    "ceiling": null,
-    "evTable": [],
-    "status": "no_ceiling",
-    "ceilingShort": []
-  },
-  {
     "name": "パチスロ　からくりサーカス",
     "ceiling": null,
     "evTable": [],
     "status": "fetch_error",
     "error": "Invalid URL",
-    "ceilingShort": []
-  },
-  {
-    "name": "スマート沖スロ　ドラゴンハナハナ～閃光～",
-    "ceiling": null,
-    "evTable": [],
-    "status": "no_ceiling",
-    "ceilingShort": []
-  },
-  {
-    "name": "スマート沖スロ　スターハナハナ",
-    "ceiling": null,
-    "evTable": [],
-    "status": "no_ceiling",
     "ceilingShort": []
   },
   {
@@ -1980,27 +1903,6 @@
     "cz_ceiling": null,
     "czEvTable": null,
     "czEvTableReset": null,
-    "ceilingShort": []
-  },
-  {
-    "name": "ジャグラーガールズＳＳ",
-    "ceiling": null,
-    "evTable": [],
-    "status": "no_ceiling",
-    "ceilingShort": []
-  },
-  {
-    "name": "ミスタージャグラー",
-    "ceiling": null,
-    "evTable": [],
-    "status": "no_ceiling",
-    "ceilingShort": []
-  },
-  {
-    "name": "ウルトラミラクルジャグラー",
-    "ceiling": null,
-    "evTable": [],
-    "status": "no_ceiling",
     "ceilingShort": []
   },
   {
@@ -3024,13 +2926,6 @@
     "cz_ceiling": null,
     "czEvTable": null,
     "czEvTableReset": null,
-    "ceilingShort": []
-  },
-  {
-    "name": "Ａ‐ＳＬＯＴ＋　ディスクアップ　ＵＬＴＲＡＲＥＭＩＸ",
-    "ceiling": null,
-    "evTable": [],
-    "status": "no_ceiling",
     "ceilingShort": []
   },
   {
@@ -4463,13 +4358,6 @@
     "ceilingShort": []
   },
   {
-    "name": "Ａ‐ＳＬＯＴ＋　異世界かるてっとＢＴ",
-    "ceiling": null,
-    "evTable": [],
-    "status": "no_ceiling",
-    "ceilingShort": []
-  },
-  {
     "name": "Ｌパチスロ　炎炎ノ消防隊",
     "ceiling": 850,
     "evTable": [
@@ -5021,24 +4909,6 @@
         "ceiling": 200
       }
     ],
-    "evTableShort": []
-  },
-  {
-    "name": "ドラゴンハナハナ～閃光～-30",
-    "ceiling": null,
-    "evTable": [],
-    "status": "no_ceiling",
-    "kirihal": null,
-    "ceilingShort": [],
-    "evTableShort": []
-  },
-  {
-    "name": "バーサスリヴァイズ",
-    "ceiling": null,
-    "evTable": [],
-    "status": "no_ceiling",
-    "kirihal": null,
-    "ceilingShort": [],
     "evTableShort": []
   },
   {
@@ -5807,15 +5677,6 @@
       }
     ],
     "status": "ok",
-    "kirihal": null,
-    "ceilingShort": [],
-    "evTableShort": []
-  },
-  {
-    "name": "マジカルハロウィン ボーナストリガー",
-    "ceiling": null,
-    "evTable": [],
-    "status": "no_ceiling",
     "kirihal": null,
     "ceilingShort": [],
     "evTableShort": []
@@ -6833,15 +6694,6 @@
     "evTableShort": []
   },
   {
-    "name": "パチスロハイパーラッシュ",
-    "ceiling": null,
-    "evTable": [],
-    "status": "no_ceiling",
-    "kirihal": null,
-    "ceilingShort": [],
-    "evTableShort": []
-  },
-  {
     "name": "バーニングエクスプレス",
     "ceiling": 950,
     "evTable": [
@@ -6927,24 +6779,6 @@
       }
     ],
     "status": "ok",
-    "kirihal": null,
-    "ceilingShort": [],
-    "evTableShort": []
-  },
-  {
-    "name": "パチスロこの素晴らしい世界に祝福を！",
-    "ceiling": null,
-    "evTable": [],
-    "status": "no_ceiling",
-    "kirihal": null,
-    "ceilingShort": [],
-    "evTableShort": []
-  },
-  {
-    "name": "L不二子BT",
-    "ceiling": null,
-    "evTable": [],
-    "status": "no_ceiling",
     "kirihal": null,
     "ceilingShort": [],
     "evTableShort": []
@@ -7037,15 +6871,6 @@
     "evTableShort": []
   },
   {
-    "name": "パチスロひぐらしのなく頃に祭2",
-    "ceiling": null,
-    "evTable": [],
-    "status": "no_ceiling",
-    "kirihal": null,
-    "ceilingShort": [],
-    "evTableShort": []
-  },
-  {
     "name": "パチスロ 戦国†恋姫",
     "ceiling": 850,
     "evTable": [
@@ -7131,24 +6956,6 @@
       }
     ],
     "status": "ok",
-    "kirihal": null,
-    "ceilingShort": [],
-    "evTableShort": []
-  },
-  {
-    "name": "パチスロ 魔法少女育成計画",
-    "ceiling": null,
-    "evTable": [],
-    "status": "no_ceiling",
-    "kirihal": null,
-    "ceilingShort": [],
-    "evTableShort": []
-  },
-  {
-    "name": "LBスロットGALFY",
-    "ceiling": null,
-    "evTable": [],
-    "status": "no_ceiling",
     "kirihal": null,
     "ceilingShort": [],
     "evTableShort": []
@@ -7395,24 +7202,6 @@
       }
     ],
     "status": "ok",
-    "kirihal": null,
-    "ceilingShort": [],
-    "evTableShort": []
-  },
-  {
-    "name": "パチスロ マクロスデルタ",
-    "ceiling": null,
-    "evTable": [],
-    "status": "no_ceiling",
-    "kirihal": null,
-    "ceilingShort": [],
-    "evTableShort": []
-  },
-  {
-    "name": "SLOTマッピー",
-    "ceiling": null,
-    "evTable": [],
-    "status": "no_ceiling",
     "kirihal": null,
     "ceilingShort": [],
     "evTableShort": []
@@ -9490,15 +9279,6 @@
     "evTableShort": []
   },
   {
-    "name": "パチスロ頭文字D",
-    "ceiling": null,
-    "evTable": [],
-    "status": "no_ceiling",
-    "kirihal": null,
-    "ceilingShort": [],
-    "evTableShort": []
-  },
-  {
     "name": "パチスロ幼女戦記",
     "ceiling": 450,
     "evTable": [
@@ -9606,15 +9386,6 @@
       }
     ],
     "status": "ok",
-    "kirihal": null,
-    "ceilingShort": [],
-    "evTableShort": []
-  },
-  {
-    "name": "クランキークレスト",
-    "ceiling": null,
-    "evTable": [],
-    "status": "no_ceiling",
     "kirihal": null,
     "ceilingShort": [],
     "evTableShort": []
@@ -10131,24 +9902,6 @@
       }
     ],
     "status": "ok",
-    "kirihal": null,
-    "ceilingShort": [],
-    "evTableShort": []
-  },
-  {
-    "name": "ニューパルサーSP4 with 太鼓の達人",
-    "ceiling": null,
-    "evTable": [],
-    "status": "no_ceiling",
-    "kirihal": null,
-    "ceilingShort": [],
-    "evTableShort": []
-  },
-  {
-    "name": "サンダーVライトニング",
-    "ceiling": null,
-    "evTable": [],
-    "status": "no_ceiling",
     "kirihal": null,
     "ceilingShort": [],
     "evTableShort": []
