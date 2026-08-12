@@ -909,7 +909,7 @@
   },
   {
     "name": "スマスロ　北斗の拳　転生の章２",
-    "ceiling": 950,
+    "ceiling": 1024,
     "evTable": [
       {
         "g": 0,
@@ -994,10 +994,19 @@
     ],
     "status": "ok",
     "cz_ceiling": null,
-    "ceiling_note": "あべし単位（要確認）",
+    "ceiling_note": "天井は「あべし」単位のため1G=1.5あべしで換算（通常条件 最大1536あべし=1024G）",
     "czEvTable": null,
     "czEvTableReset": null,
-    "ceilingShort": []
+    "ceilingShort": [
+      {
+        "label": "設定変更時",
+        "ceiling": 853
+      },
+      {
+        "label": "リセット時",
+        "ceiling": 853
+      }
+    ]
   },
   {
     "name": "スマスロ　ミリオンゴッド‐神々の軌跡‐",
